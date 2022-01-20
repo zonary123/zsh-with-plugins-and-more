@@ -7,5 +7,6 @@ sudo cp -r plugin-zsh /usr/share
 
 sudo usermod --shell /usr/bin/zsh root
 sudo usermod --shell /usr/bin/zsh $(whoami)
+
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
