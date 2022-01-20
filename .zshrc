@@ -1,5 +1,5 @@
 #screenfetch -ED 'arch linux'
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source /etc/skel/powerlevel10k/powerlevel10k.zsh-theme
 # Fix the Java Problem
 export _JAVA_AWT_WM_NONREPARENTING=1
 
