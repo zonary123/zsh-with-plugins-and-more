@@ -1,4 +1,6 @@
 <p>Lugares de donde se saca todo</p>
+<p>Esto es una instalacion de fzf bat lsd ranger zsh powerlevel10k(con plugins) automaticamente con una configuracion prehecha a demas de poner los archivos de configuracion
+de zsh y powerlevel10k retocados un poco en tema de color. Si se quiere cambiar esa configuracion se deberia de ir a la url de powerlevel10k y hacer la instalacion manual. los archivos de powerlevel10k y zsh se copian en la carpeta /etc/skel de manera que al crear un usuario tenga la configuracion de zsh y powerlevel10k</p>
 <table class="default">
   <tr>
     <td>Powerlevel10k</td>
