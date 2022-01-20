@@ -1,6 +1,6 @@
 #!/bin/bash
 #Instalacion de zsh
-apt install zsh 
+sudo apt install zsh 
 
 #Instalacion de lsd y bat
 wget https://github.com/sharkdp/bat/releases/download/v0.19.0/bat_0.19.0_amd64.deb
