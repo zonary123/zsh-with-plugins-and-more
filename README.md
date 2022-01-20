@@ -21,4 +21,4 @@ de zsh y powerlevel10k retocados un poco en tema de color. Si se quiere cambiar 
     <td>https://github.com/sharkdp/bat</td>
   </tr>
 </table>
-<p></p>
+<p>!!!NO E COMPROBADO SI FUNCIONA¡¡¡</p>
