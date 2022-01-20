@@ -22,9 +22,9 @@ Los archivos de zsh y los plugins de zsh se envian a una carpeta en el directori
     <td>bat</td>
     <td>https://github.com/sharkdp/bat</td>
   </tr>
-  <tr>
-    <td>Fuente de letra</td>
-  </tr>
+</table>
+<h2>Tipgrafia</h2>
+<table class="default">
   <tr>
     <td>Hack nerd Fonts</td>
     <td>https://www.nerdfonts.com/#home</td>
