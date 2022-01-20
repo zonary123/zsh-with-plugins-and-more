@@ -1,5 +1,5 @@
-#screenfetch -ED 'arch linux'
-source /etc/skel/powerlevel10k/powerlevel10k.zsh-theme
+source /usr/share/zsh-p10k/powerlevel10k/powerlevel10k.zsh-theme
+
 # Fix the Java Problem
 export _JAVA_AWT_WM_NONREPARENTING=1
 
@@ -35,8 +35,8 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+[[ -f /usr/share/zsh-p10k/.p10k.zsh ]] && source /usr/share/zsh-p10k/.p10k.zsh
+source /usr/share/zsh-p10k/powerlevel10k/powerlevel10k.zsh-theme
 
 # Manual configuration
 
