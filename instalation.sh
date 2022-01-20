@@ -1,5 +1,5 @@
 #!/bin/bash
-apt install zsh ranger git
+apt install zsh ranger htop
 sudo dpkg -i /cosas/lsd_0.21.0_amd64.deb /cosas/bat_0.19.0_amd64.deb
 
 sudo cp -r {powerlevel10k,.p10k.zsh,.zshrc} /etc/skel
