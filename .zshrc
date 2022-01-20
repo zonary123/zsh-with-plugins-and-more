@@ -53,14 +53,14 @@ alias cat='bat'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Plugins
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh-sudo/sudo.plugin.zsh
-source /usr/share/zsh-copydir/copydir.plugin.zsh
-source /usr/share/zsh-dirhistory/dirhistory.plugin.zsh
-source /usr/share/zsh-history/history.plugin.zsh
-source /usr/share/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
-source /usr/share/zsh-vscode/vscode.plugin.zsh
+source /usr/share/plugins-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/plugins-zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/plugins-zsh/zsh-sudo/sudo.plugin.zsh
+source /usr/share/plugins-zsh/zsh-copydir/copydir.plugin.zsh
+source /usr/share/plugins-zsh/zsh-dirhistory/dirhistory.plugin.zsh
+source /usr/share/plugins-zsh/zsh-history/history.plugin.zsh
+source /usr/share/plugins-zsh/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
+source /usr/share/plugins-zsh/zsh-vscode/vscode.plugin.zsh
 
 #plugin aliases
 source /usr/share/aliases.plugin.zsh 
