@@ -1,6 +1,7 @@
 
-<p>Esto es una instalacion de fzf bat lsd ranger zsh powerlevel10k(con plugins) automaticamente con una configuracion prehecha a demas de poner los archivos de configuracion
-de zsh y powerlevel10k retocados un poco en tema de color. Si se quiere cambiar esa configuracion se deberia de ir a la url de powerlevel10k y hacer la instalacion manual. los archivos de powerlevel10k y zsh se copian en la carpeta /etc/skel de manera que al crear un usuario tenga la configuracion de zsh y powerlevel10k</p>
+<p>Esto es una instalacion de fzf bat lsd ranger zsh(con plugins) con powerlevel10k automaticamente con una configuracion prehecha.
+Los archivos de zsh y los plugins de zsh se envian a una carpeta en el directorio /usr/share/zsh-plugins y la configuracion de powerlevel10k y de zsh se envian a la carpeta /etc/skel . El tema de powerlevel10k se envia a una carpeta que se crea en la ubicacion /usr/share/zsh-p10k/ . Si quisieras cambiar el tema de los zsh tendrias que hacer la instalacion de powerlevel10k manualmente y mover los archivos que crea powerlevel10k en el carpeta personal del usuario y moverlos en la ubicacion /usr/share/zsh-p10k/ .
+</p>
 
 <h2>Links de cada cosa.</h2>
 <table class="default">
@@ -21,4 +22,3 @@ de zsh y powerlevel10k retocados un poco en tema de color. Si se quiere cambiar 
     <td>https://github.com/sharkdp/bat</td>
   </tr>
 </table>
-<p>!!!NO E COMPROBADO SI FUNCIONA¡¡¡</p>

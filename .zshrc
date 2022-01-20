@@ -35,7 +35,7 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ -f /usr/share/zsh-p10k/.p10k.zsh ]] && source /usr/share/zsh-p10k/.p10k.zsh
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 source /usr/share/zsh-p10k/powerlevel10k/powerlevel10k.zsh-theme
 
 # Manual configuration
