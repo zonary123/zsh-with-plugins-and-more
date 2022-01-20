@@ -2,6 +2,9 @@
 apt install zsh ranger
 sudo dpkg -i ./cosas/lsd_0.21.0_amd64.deb ./cosas/bat_0.19.0_amd64.deb
 
+mv ./fonts/Hack.zip /usr/share/fonts
+unzip /usr/share/fonts/Hack.zip
+
 sudo mkdir /usr/share/zsh-p10k 
 sudo cp -r ./powerlevel10k /usr/share/zsh-p10k
 sudo cp -r ./{.p10k.zsh,.zshrc} /etc/skel
