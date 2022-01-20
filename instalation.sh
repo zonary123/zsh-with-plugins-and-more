@@ -1,6 +1,6 @@
 #!/bin/bash
 apt install zsh ranger git
-sudo dpkg -i lsd_0.21.0_amd64.deb bat_0.19.0_amd64.deb
+sudo dpkg -i /cosas/lsd_0.21.0_amd64.deb /cosas/bat_0.19.0_amd64.deb
 
 sudo cp -r {powerlevel10k,.p10k.zsh,.zshrc} /etc/skel
 sudo cp -r plugin-zsh /usr/share
