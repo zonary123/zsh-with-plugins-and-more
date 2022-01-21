@@ -24,6 +24,7 @@ Los archivos de zsh y los plugins de zsh se envian a una carpeta en el directori
   </tr>
 </table>
 <h2>Tipografia</h2>
+<p>La tipografia se instala sola pero tienes que cambiarla manualmente en la terminal.Esto es para poder ver los iconos y las demas cosas y que no veas una terminal con simbolos raros.</p>
 <table class="default">
   <tr>
     <td>Hack nerd Fonts</td>
