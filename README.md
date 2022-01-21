@@ -30,3 +30,14 @@ Los archivos de zsh y los plugins de zsh se envian a una carpeta en el directori
     <td>https://www.nerdfonts.com/#home</td>
   </tr>
 </table>
+<h2>Plugins zsh</h2>
+    <ol style="list-style-type: disc;">
+        <li><a rel="stylesheet" href="https://github.com/zsh-users/zsh-autosuggestions">zsh-autosuggestions</a></li>
+        <li><a rel="stylesheet" href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copydir">zsh-copydir</a></li>
+        <li><a rel="stylesheet" href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dirhistory">zsh-dirhistory</a></li>
+        <li><a rel="stylesheet" href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history">zsh-history</a></li>
+        <li><a rel="stylesheet" href="https://github.com/changyuheng/zsh-interactive-cd">zsh-interactive-cd</a></li>
+        <li><a rel="stylesheet" href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo">zsh-sudo</a></li>
+        <li><a rel="stylesheet" href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh-syntax-highlighting</a></li>
+        <li><a rel="stylesheet" href="https://github.com/valentinocossar/vscode">zsh-vscode</a></li>
+    </ol> 
