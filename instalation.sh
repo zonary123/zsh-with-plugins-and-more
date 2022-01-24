@@ -13,11 +13,12 @@ sudo mv ./Hack.zip /usr/share/fonts
 sudo unzip /usr/share/fonts/Hack.zip
 
 #Creacion de la carpeta zsh-p10k y copia de las carpetas a sus respectivos directorios
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ./powerlevel10k
 sudo mkdir /usr/share/zsh-p10k 
 sudo cp -r ./powerlevel10k /usr/share/zsh-p10k
-sudo cp -r ./{.p10k.zsh,.zshrc} /etc/skel
-sudo cp -r ./{.p10k.zsh,.zshrc} $HOME
-sudo cp -r ./{.p10k.zsh,.zshrc} /root
+#sudo cp -r ./{.p10k.zsh,.zshrc} /etc/skel
+#sudo cp -r ./{.p10k.zsh,.zshrc} $HOME
+#sudo cp -r ./{.p10k.zsh,.zshrc} /root
 
 #Plugins ZSH
 git clone https://github.com/zsh-users/zsh-autosuggestions ./plugins-zsh/zsh-autosuggestions
@@ -31,8 +32,13 @@ sudo usermod --shell /usr/bin/zsh $(whoami)
 #Instalacion de fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
-
-
+read -rp "Quieres una configuracion determinada si/no" respuesta
+if [ $respuesta == "si" ]
+then
+    ./Themes.sh
+else
+    echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+fi
 
 #Cambio a la nueva terminal
 zsh
