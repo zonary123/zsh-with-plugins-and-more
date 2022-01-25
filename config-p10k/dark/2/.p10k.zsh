@@ -111,7 +111,10 @@
     #taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
     #time                  # current time
     #=========================[ Line #2 ]=========================
-    #newline                 # \n
+    newline                 # \n
+    #load                  # CPU load
+    #disk_usage            # disk usage
+    #ram                   # free RAM
     #ip                    # ip address and bandwidth usage for a specified network interface
     #public_ip             # public IP address
     #proxy                 # system-wide http/https/ftp proxy
@@ -193,16 +196,11 @@
 
   #################################[ os_icon: os identifier ]##################################
   # OS identifier color.
-  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=255
-  # Custom icon.
-  # OSICON
-  #ypeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=''
-#################################[ os_icon: os zonary123 ]##################################
-  # OS identifier color.
-  #typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=197
+  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=197
   # Custom icon.
   # OSICON
   #typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=''
+
   ################################[ prompt_char: prompt symbol ]################################
   # Transparent background.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_BACKGROUND=
@@ -583,7 +581,7 @@
   # Show this many fractional digits. Zero means round to seconds.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_PRECISION=0
   # Execution time color.
-  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND=248
+  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND=178
   # Duration format: 1d 2h 3m 4s.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FORMAT='d h m s'
   # Custom icon.
@@ -908,20 +906,20 @@
   # Context color when running with privileges.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=215
   # Context color in SSH without privileges.
-  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_FOREGROUND=25
+  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_FOREGROUND=155
   # Default context color (no privileges, no SSH).
   typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=84
 
   # Context format when running with privileges: bold user@hostname.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE=''
   # Context format when in SSH without privileges: user@hostname.
-  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_TEMPLATE=''
+  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_TEMPLATE="ssh  "
   # Default context format (no privileges, no SSH): user@hostname.
   typeset -g POWERLEVEL9K_CONTEXT_TEMPLATE=''
 
   # Don't show context unless running with privileges or in SSH.
   # Tip: Remove the next line to always show context.
-  #typeset -g POWERLEVEL9K_CONTEXT_{DEFAULT,SUDO}_{CONTENT,VISUAL_IDENTIFIER}_EXPANSION=
+  #typeset -g POWERLEVEL9K_CONTEXT_{DEFAULT,SUDO}_{CONTENT,VISUAL_IDENTIFIER}_EXPANSION=''
 
   # Custom icon.
   # typeset -g POWERLEVEL9K_CONTEXT_VISUAL_IDENTIFIER_EXPANSION='⭐'
