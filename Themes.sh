@@ -9,12 +9,12 @@ then
         read -rp "Elije el numero de Tema del 1-4: " dark
         if [ "1" == "$dark" ] 
         then
-            sudo cp -r ./config-p10k/dark/1/{.p10k.zsh,.zshrc} ""$HOME""
+            sudo cp -r ./config-p10k/dark/1/{.p10k.zsh,.zshrc} "$HOME"
             sudo cp -r ./config-p10k/dark/1/{.p10k.zsh,.zshrc} /etc/skel
             zsh
         elif [ "2" == "$dark" ] 
         then
-            sudo cp -r ./config-p10k/dark/2/{.p10k.zsh,.zshrc} ""$HOME""
+            sudo cp -r ./config-p10k/dark/2/{.p10k.zsh,.zshrc} "$HOME"
             sudo cp -r ./config-p10k/dark/2/{.p10k.zsh,.zshrc} /etc/skel
         elif [ "3" == "$dark" ] 
         then
