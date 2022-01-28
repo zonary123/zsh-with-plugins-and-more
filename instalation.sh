@@ -2,7 +2,7 @@
 if [ "$USERNAME" == "root" ] 
 then
     #Instalacion de zsh
-apt install zsh ranger
+apt install zsh ranger xclip
 
 #Comandos wget
 wget https://github.com/sharkdp/bat/releases/download/v0.19.0/bat_0.19.0_amd64.deb
@@ -35,6 +35,11 @@ usermod --shell /usr/bin/zsh "$USERNAME"
 
 #Instalacion de fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+cp ~/.fzf /etc/skel
+cp ~/.fzf /root
+/root/.fzf/install
+/etc/skel/.fzf/install
+~/.fzf/install
 ~/.fzf/install
 
 ln -s /root/.zshrc .zshrc 
@@ -50,7 +55,7 @@ fi
 
 else
     #Instalacion de zsh
-sudo apt install zsh ranger
+sudo apt install zsh ranger xclip
 
 #Comandos wget
 wget https://github.com/sharkdp/bat/releases/download/v0.19.0/bat_0.19.0_amd64.deb
@@ -83,6 +88,10 @@ sudo usermod --shell /usr/bin/zsh "$USERNAME"
 
 #Instalacion de fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+sudo cp ~/.fzf /etc/skel
+sudo cp ~/.fzf /root
+/root/.fzf/install
+/etc/skel/.fzf/install
 ~/.fzf/install
 
 sudo ln -s /root/.zshrc .zshrc 
