@@ -4,10 +4,10 @@ Los archivos de zsh y los plugins de zsh se envian a una carpeta en el directori
 <p>Tambien se instalara unas tipografias para la terminal. Tendras que cambiar la tipografia de la terminal a hack nerd fonts</p>
 
 <h2>Install</h2>
-  <p>mkdir ~/git</p><br>
-  <p>mkdir ~/git/clone</p><br>
-  <p>git clone https://github.com/zonary123/zsh-with-plugins-and-more</p><br>
-  <p>cd /zsh-with-plugins-and-more</p><br>
+  <p>mkdir ~/git</p>
+  <p>mkdir ~/git/clone</p>
+  <p>git clone https://github.com/zonary123/zsh-with-plugins-and-more</p>
+  <p>cd /zsh-with-plugins-and-more</p>
   <p>sudo ./instalation</p>
 <h2>Instalacion al terminar</h2>
 <img src="./src/img/linux.png" alt="">
