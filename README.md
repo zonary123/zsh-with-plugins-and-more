@@ -4,6 +4,8 @@ Los archivos de zsh y los plugins de zsh se envian a una carpeta en el directori
 </p>
 <p>Tambien se instalara unas tipografias para la terminal. Tendras que cambiar la tipografia de la terminal a hack nerd fonts</p>
 
+<h2>Instalacion al terminar</h2>
+<img src="./src/img/linux.png" alt="">
 <h2>Inslatacion de bspwm sxhkd automatico</h2>
 <table>
   <tr>
