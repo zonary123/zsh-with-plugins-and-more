@@ -3,14 +3,15 @@ git clone https://github.com/yorkox0/autoBspwm
 python3 autoBspwm/main.py
 mkdir ~/git
 mkdir ~/git/clone
-git clone --depth=1 https://github.com/adi1090x/polybar-themes.git > ~/git/clone
+cd ~/git/clone
+git clone --depth=1 https://github.com/adi1090x/polybar-themes.git 
 chmod +x ~/git/clone/polybar-themes/setup.sh
 ~/git/clone/polybar-themes/setup.sh
-cp ./config/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
-cp ./config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
-cp ./config/wallpaper/wallpaper.jpg ~/.wallpapers/wallpaper.jpg
+cp ~/git/clone/config/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
+cp ~/git/clone/config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
+cp ~/git/clone/config/wallpaper/wallpaper.jpg ~/.wallpapers/wallpaper.jpg
 rm -r ~/git/clone/polybar-themes/simple/shapes
-cp -r ./config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/shapes
+cp -r ~/git/clone/config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/shapes
 
 if [ "$USERNAME" == "root" ] 
 then
@@ -107,8 +108,8 @@ sudo cp ~/.fzf /root
 /etc/skel/.fzf/install
 ~/.fzf/install
 
-sudo ln -s /root/.zshrc .zshrc 
-sudo ln -s /root/.p10k.zsh .p10k.zsh 
+sudo ln -s ~/.zshrc /root/.zshrc 
+sudo ln -s ~/.p10k.zsh /root/.p10k.zsh 
 
 read -rp "Quieres una configuracion determinada si/no" respuesta
 if [ "$respuesta" == "si" ]

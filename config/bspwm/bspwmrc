@@ -22,5 +22,5 @@ wmname LG3D &
 bspc config focus_follows_pointer true
 bspc config border_width 0
 picom --experimental-backends &
-~/git/clone/polybar-themes/simple/shapes/preview.sh --shapes
-~/git/clone/polybar-themes/simple/shapes/scripts/colors-dark.sh --purple
+/./home/carlos/git/clone/polybar-themes/simple/shapes/preview.sh --shapes
+/./home/carlos/git/clone/polybar-themes/simple/shapes/scripts/colors-dark.sh --purple
