@@ -14,28 +14,28 @@ Tambien se instalara unas tipografias para la terminal. Tendras que cambiar la t
 ## Instalacion al terminar
 ![](src/img/linux.png)
 ## Inslatacion de bspwm sxhkd automatico
-[config de s4vitar](https://github.com/yorkox0/autoBspwm)
-[polybar-themes](https://github.com/adi1090x/polybar-themes)
+- [config de s4vitar](https://github.com/yorkox0/autoBspwm)
+- [polybar-themes](https://github.com/adi1090x/polybar-themes)
 ## Links de cada cosa.
-[Powerlevel10k](https://github.com/romkatv/powerlevel10k)
-[fzf](https://github.com/junegunn/fzf)
-[lsd](https://github.com/Peltoche/lsd)
-[bat](https://github.com/sharkdp/bat)
+- [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+- [fzf](https://github.com/junegunn/fzf)
+- [lsd](https://github.com/Peltoche/lsd)
+- [bat](https://github.com/sharkdp/bat)
 ## Tipografia
 La tipografia se instala sola pero tienes que cambiarla manualmente en la terminal.Esto es para poder ver los iconos y las demas cosas y que no veas una terminal con simbolos raros.
 
-[Hack nerd Fonts](https://www.nerdfonts.com/#home)
+- [Hack nerd Fonts](https://www.nerdfonts.com/#home)
 
 ## Plugins zsh
 
-[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-[zsh-copydir](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copydir)
-[zsh-dirhistory](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dirhistory)
-[zsh-history](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history)
-[zsh-interactive-cd](https://github.com/changyuheng/zsh-interactive-cd)
-[zsh-sudo](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo)
-[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-[zsh-vscode](https://github.com/valentinocossar/vscode)
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+- [zsh-copydir](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copydir)
+- [zsh-dirhistory](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dirhistory)
+- [zsh-history](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history)
+- [zsh-interactive-cd](https://github.com/changyuheng/zsh-interactive-cd)
+- [zsh-sudo](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo)
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+- [zsh-vscode](https://github.com/valentinocossar/vscode)
 
 
 
