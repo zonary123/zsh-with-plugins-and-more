@@ -13,6 +13,7 @@ chmod +x ~/git/clone/polybar-themes/setup.sh
 ~/git/clone/polybar-themes/setup.sh
 cp ~/git/clone/config/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
 cp ~/git/clone/config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
+rm ~/.wallpaper/wallpaper.jpg
 cp ~/git/clone/config/wallpaper/wallpaper.jpg ~/.wallpapers/wallpaper.jpg
 rm -r ~/git/clone/polybar-themes/simple/shapes
 cp -r ~/git/clone/config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/shapes
