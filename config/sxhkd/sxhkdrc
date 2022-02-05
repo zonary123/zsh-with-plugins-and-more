@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	gnome-terminal
+	gnome-terminal #exo-open --launch TerminalEmulator
 
 # program launcher
 super + d
@@ -141,9 +141,9 @@ super + shift + g
 
 # Open Burpsuite Professional
 
-super + ctrl + b
+super + shift + b
 	gksudo burp
 
 #firefox
-super + ctrl + f
+super + shift + f
 	firefox

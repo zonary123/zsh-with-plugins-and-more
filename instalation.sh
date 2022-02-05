@@ -17,10 +17,8 @@ cp ~/git/clone/zsh-with-plugins-and-more/config/wallpaper/wallpaper.jpg ~/.wallp
 rm -r ~/git/clone/polybar-themes/simple/shapes
 cp -r ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/
 
-if [ "$USERNAME" == "root" ] 
-then
     #Instalacion de zsh
-apt install zsh ranger xclip
+apt install zsh ranger xclip snapd
 
 #Comandos wget
 wget https://github.com/sharkdp/bat/releases/download/v0.19.0/bat_0.19.0_amd64.deb
@@ -72,62 +70,4 @@ then
     ./Themes.sh
 else
     echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
-fi
-
-else
-    #Instalacion de zsh
-sudo apt install zsh ranger xclip
-
-#Comandos wget
-wget https://github.com/sharkdp/bat/releases/download/v0.19.0/bat_0.19.0_amd64.deb
-wget https://github.com/Peltoche/lsd/releases/download/0.21.0/lsd_0.21.0_amd64.deb
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip 
-sudo dpkg -i ./lsd_0.21.0_amd64.deb
-sudo dpkg -i ./bat_0.19.0_amd64.deb
-sudo rm ./lsd_0.21.0_amd64.deb
-sudo rm ./bat_0.19.0_amd64.deb
-#Comandos Git clone
-
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ./powerlevel10k
-git clone https://github.com/zsh-users/zsh-autosuggestions ./plugins-zsh/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting ./plugins-zsh/zsh-syntax-highlighting
-
-#Instalacion de la tipografia Hack nerd Fonts
-sudo mv ./Hack.zip /usr/share/fonts
-sudo unzip /usr/share/fonts/Hack.zip
-
-sudo mkdir /usr/share/zsh-p10k 
-sudo cp -r ./powerlevel10k /usr/share/zsh-p10k
-#sudo cp -r ./{.p10k.zsh,.zshrc} /etc/skel
-#sudo cp -r ./{.p10k.zsh,.zshrc} $HOME
-#sudo cp -r ./{.p10k.zsh,.zshrc} /root
-
-#Plugins ZSH
-sudo cp -r plugins-zsh /usr/share
-
-#Cambio de la terminal del usuario a zsh
-sudo usermod --shell /usr/bin/zsh root
-sudo usermod --shell /usr/bin/zsh "$USERNAME"
-
-#Instalacion de fzf
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-sudo cp ~/.fzf /etc/skel
-sudo cp ~/.fzf /root
-/root/.fzf/install
-/etc/skel/.fzf/install
-~/.fzf/install
-
-sudo ln -s ~/.zshrc /root/.zshrc 
-sudo ln -s ~/.p10k.zsh /root/.p10k.zsh
-
-~/git/clone/polybar-themes/setup.sh
-
-read -rp "Quieres una configuracion determinada si/no" respuesta
-if [ "$respuesta" == "si" ]
-then
-    ./Themes.sh
-else
-    echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-fi
-
 fi
