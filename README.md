@@ -7,7 +7,12 @@ Los archivos de zsh y los plugins de zsh se envian a una carpeta en el directori
 <h2>Inslatacion de bspwm sxhkd automatico</h2>
 <table>
   <tr>
+    <td>config de s4vitar</td>
     <td>https://github.com/yorkox0/autoBspwm</td>
+  </tr>
+  <tr>
+    <td>polybar-themes</td>
+    <td>https://github.com/adi1090x/polybar-themes</td>
   </tr>
 </table>
 <h2>Links de cada cosa.</h2>
