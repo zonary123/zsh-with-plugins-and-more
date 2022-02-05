@@ -17,8 +17,11 @@ cp ~/git/clone/zsh-with-plugins-and-more/config/wallpaper/wallpaper.jpg ~/.wallp
 rm -r ~/git/clone/polybar-themes/simple/shapes
 cp -r ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/
 
-    #Instalacion de zsh
-apt install zsh ranger xclip snapd
+#Instalacion de zsh y mas paquetes
+apt install zsh ranger xclip snapd tree
+##Instalacion de visual studio code
+#systemctl start snapd.service
+#snap install --classic code
 
 #Comandos wget
 wget https://github.com/sharkdp/bat/releases/download/v0.19.0/bat_0.19.0_amd64.deb
