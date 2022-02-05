@@ -1,4 +1,17 @@
 #!/bin/bash
+git clone https://github.com/yorkox0/autoBspwm
+python3 autoBspwm/main.py
+mkdir ~/git
+mkdir ~/git/clone
+git clone --depth=1 https://github.com/adi1090x/polybar-themes.git > ~/git/clone
+chmod +x ~/git/clone/polybar-themes/setup.sh
+~/git/clone/polybar-themes/setup.sh
+cp ./config/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
+cp ./config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
+cp ./config/wallpaper/wallpaper.jpg ~/.wallpapers/wallpaper.jpg
+rm -r ~/git/clone/polybar-themes/simple/shapes
+cp -r ./config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/shapes
+
 if [ "$USERNAME" == "root" ] 
 then
     #Instalacion de zsh
@@ -9,7 +22,7 @@ wget https://github.com/sharkdp/bat/releases/download/v0.19.0/bat_0.19.0_amd64.d
 wget https://github.com/Peltoche/lsd/releases/download/0.21.0/lsd_0.21.0_amd64.deb
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip 
 dpkg -i ./lsd_0.21.0_amd64.deb ./bat_0.19.0_amd64.deb
-
+rm ./lsd_0.21.0_amd64.deb ./bat_0.19.0_amd64.deb
 #Comandos Git clone
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ./powerlevel10k
@@ -62,7 +75,7 @@ wget https://github.com/sharkdp/bat/releases/download/v0.19.0/bat_0.19.0_amd64.d
 wget https://github.com/Peltoche/lsd/releases/download/0.21.0/lsd_0.21.0_amd64.deb
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip 
 sudo dpkg -i ./lsd_0.21.0_amd64.deb ./bat_0.19.0_amd64.deb
-
+sudo rm ./lsd_0.21.0_amd64.deb ./bat_0.19.0_amd64.deb
 #Comandos Git clone
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ./powerlevel10k
