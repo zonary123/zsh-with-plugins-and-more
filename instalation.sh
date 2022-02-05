@@ -10,13 +10,12 @@ mkdir ~/git/clone
 cd ~/git/clone
 git clone --depth=1 https://github.com/adi1090x/polybar-themes.git 
 chmod +x ~/git/clone/polybar-themes/setup.sh
-~/git/clone/polybar-themes/setup.sh
-cp ~/git/clone/config/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
-cp ~/git/clone/config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
+cp ~/git/clone/zsh-with-plugins-and-more/config/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
+cp ~/git/clone/zsh-with-plugins-and-more/config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 rm ~/.wallpaper/wallpaper.jpg
-cp ~/git/clone/config/wallpaper/wallpaper.jpg ~/.wallpapers/wallpaper.jpg
+cp ~/git/clone/zsh-with-plugins-and-more/config/wallpaper/wallpaper.jpg ~/.wallpapers
 rm -r ~/git/clone/polybar-themes/simple/shapes
-cp -r ~/git/clone/config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/shapes
+cp -r ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/
 
 if [ "$USERNAME" == "root" ] 
 then
@@ -65,6 +64,7 @@ cp ~/.fzf /root
 
 ln -s /root/.zshrc .zshrc 
 ln -s /root/.p10k.zsh .p10k.zsh 
+~/git/clone/polybar-themes/setup.sh
 
 read -rp "Quieres una configuracion determinada si/no" respuesta
 if [ "$respuesta" == "si" ]
@@ -118,7 +118,9 @@ sudo cp ~/.fzf /root
 ~/.fzf/install
 
 sudo ln -s ~/.zshrc /root/.zshrc 
-sudo ln -s ~/.p10k.zsh /root/.p10k.zsh 
+sudo ln -s ~/.p10k.zsh /root/.p10k.zsh
+
+~/git/clone/polybar-themes/setup.sh
 
 read -rp "Quieres una configuracion determinada si/no" respuesta
 if [ "$respuesta" == "si" ]
