@@ -1,4 +1,8 @@
 #!/bin/bash
+apt update && apt upgrade 
+apt install screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
+sudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-devsudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-dev
+sudo apt-get install libuv1-dev
 git clone https://github.com/yorkox0/autoBspwm
 python3 autoBspwm/main.py
 mkdir ~/git
@@ -22,8 +26,10 @@ apt install zsh ranger xclip
 wget https://github.com/sharkdp/bat/releases/download/v0.19.0/bat_0.19.0_amd64.deb
 wget https://github.com/Peltoche/lsd/releases/download/0.21.0/lsd_0.21.0_amd64.deb
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip 
-dpkg -i ./lsd_0.21.0_amd64.deb ./bat_0.19.0_amd64.deb
-rm ./lsd_0.21.0_amd64.deb ./bat_0.19.0_amd64.deb
+dpkg -i ./lsd_0.21.0_amd64.deb
+dpkg -i ./bat_0.19.0_amd64.deb
+rm ./lsd_0.21.0_amd64.deb
+rm ./bat_0.19.0_amd64.deb
 #Comandos Git clone
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ./powerlevel10k
@@ -75,8 +81,10 @@ sudo apt install zsh ranger xclip
 wget https://github.com/sharkdp/bat/releases/download/v0.19.0/bat_0.19.0_amd64.deb
 wget https://github.com/Peltoche/lsd/releases/download/0.21.0/lsd_0.21.0_amd64.deb
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip 
-sudo dpkg -i ./lsd_0.21.0_amd64.deb ./bat_0.19.0_amd64.deb
-sudo rm ./lsd_0.21.0_amd64.deb ./bat_0.19.0_amd64.deb
+sudo dpkg -i ./lsd_0.21.0_amd64.deb
+sudo dpkg -i ./bat_0.19.0_amd64.deb
+sudo rm ./lsd_0.21.0_amd64.deb
+sudo rm ./bat_0.19.0_amd64.deb
 #Comandos Git clone
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ./powerlevel10k
