@@ -13,10 +13,16 @@ chmod +x ~/git/clone/polybar-themes/setup.sh
 cp ~/git/clone/zsh-with-plugins-and-more/config/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
 cp ~/git/clone/zsh-with-plugins-and-more/config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 rm ~/.wallpaper/wallpaper.jpg
-cp ~/git/clone/zsh-with-plugins-and-more/config/wallpaper/wallpaper.jpg ~/.wallpapers
+cp ./config/wallpaper/wallpaper.jpg ~/.wallpapers
 rm -r ~/git/clone/polybar-themes/simple/shapes
-cp -r ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/
+cp -r ./config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/
 
+#Picom
+mkdir ~/.config/picom
+cd ~/.config/picom
+cp ~/Descargas/blue-sky/picom.conf .
+
+cp -r ./config/picom ~/.config
 #Instalacion de zsh y mas paquetes
 apt install zsh ranger xclip snapd tree
 ##Instalacion de visual studio code
