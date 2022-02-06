@@ -51,22 +51,22 @@ cp -r ./powerlevel10k /usr/share/zsh-p10k
 cp -r plugins-zsh /usr/share
 
 #Cambio de la terminal del usuario a zsh
-usermod --shell /usr/bin/zsh user
-usermod --shell /usr/bin/zsh "$USERNAME"
+usermod --shell /usr/bin/zsh $USERNAME
+usermod --shell /usr/bin/zsh root
 
 #Instalacion de fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-cp ~/.fzf /etc/skel
 cp ~/.fzf /root
 /root/.fzf/install
 /etc/skel/.fzf/install
 ~/.fzf/install
-~/.fzf/install
 
-ln -s /root/.zshrc .zshrc 
-ln -s /root/.p10k.zsh .p10k.zsh 
+ln -s ~/.zshrc .zshrc 
+ln -s ~/.p10k.zsh .p10k.zsh 
 ~/git/clone/polybar-themes/setup.sh
-
+#/etc/skel
+cp ~/.fzf /etc/skel
+cp -r ~/.config /etc/skel
 read -rp "Quieres una configuracion determinada si/no" respuesta
 if [ "$respuesta" == "si" ]
 then
