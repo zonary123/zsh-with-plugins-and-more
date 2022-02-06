@@ -38,7 +38,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ./plugins-zsh/zsh-aut
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ./plugins-zsh/zsh-syntax-highlighting
 
 #Instalacion de la tipografia Hack nerd Fonts
-mv ./Hack.zip /usr/share/fonts
+mv Hack.zip /usr/share/fonts
 unzip /usr/share/fonts/Hack.zip
 
 mkdir /usr/share/zsh-p10k 
@@ -61,12 +61,13 @@ cp ~/.fzf /root
 /etc/skel/.fzf/install
 ~/.fzf/install
 
-ln -s ~/.zshrc .zshrc 
-ln -s ~/.p10k.zsh .p10k.zsh 
+ln -s ~/.zshrc /root/.zshrc 
+ln -s ~/.p10k.zsh /root/.p10k.zsh 
 ~/git/clone/polybar-themes/setup.sh
 #/etc/skel
 cp ~/.fzf /etc/skel
 cp -r ~/.config /etc/skel
+
 read -rp "Quieres una configuracion determinada si/no" respuesta
 if [ "$respuesta" == "si" ]
 then
