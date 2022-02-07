@@ -4,21 +4,22 @@ apt install screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh
 apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-devsudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-dev
 apt-get install libuv1-dev
 git clone https://github.com/yorkox0/autoBspwm
-python3 ~/git/clone/zsh-with-plugins-and-more/autoBspwm/main.py
+python3 ./autoBspwm/main.py
+cd ~/git/clone/zsh-with-plugins-and-more
 git clone --depth=1 https://github.com/adi1090x/polybar-themes.git 
 chmod +x ~/git/clone/polybar-themes/setup.sh
 
-cp ~/git/clone/zsh-with-plugins-and-more/config/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
-cp ~/git/clone/zsh-with-plugins-and-more/config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
+cp ./config/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
+cp ./config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 rm ~/.wallpaper/wallpaper.jpg
-cp ~/git/clone/zsh-with-plugins-and-more/config/wallpaper/wallpaper.jpg ~/.wallpapers
-rm -r ~/git/clone/zsh-with-plugins-and-more/polybar-themes/simple/shapes
-cp -r ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/
+cp ./config/wallpaper/wallpaper.jpg ~/.wallpapers
+rm -r ./polybar-themes/simple/shapes
+cp -rf ./config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/
 
 #Picom
 mkdir ~/.config/picom
 
-cp -r ./config/picom ~/.config
+cp -rf ./config/picom ~/.config
 #Instalacion de zsh y mas paquetes
 apt install zsh ranger xclip snapd tree
 ##Instalacion de visual studio code
@@ -44,13 +45,13 @@ mv Hack.zip /usr/share/fonts
 unzip /usr/share/fonts/Hack.zip
 
 mkdir /usr/share/zsh-p10k 
-cp -r ./powerlevel10k /usr/share/zsh-p10k
-#sudo cp -r ./{.p10k.zsh,.zshrc} /etc/skel
-#sudo cp -r ./{.p10k.zsh,.zshrc} $HOME
-#sudo cp -r ./{.p10k.zsh,.zshrc} /root
+cp -rf ./powerlevel10k /usr/share/zsh-p10k
+#sudo cp -rf ./{.p10k.zsh,.zshrc} /etc/skel
+#sudo cp -rf ./{.p10k.zsh,.zshrc} $HOME
+#sudo cp -rf ./{.p10k.zsh,.zshrc} /root
 
 #Plugins ZSH
-cp -r plugins-zsh /usr/share
+cp -rf plugins-zsh /usr/share
 
 #Cambio de la terminal del usuario a zsh
 usermod --shell /usr/bin/zsh $USERNAME
@@ -68,12 +69,12 @@ ln -s ~/.p10k.zsh /root/.p10k.zsh
 ~/git/clone/polybar-themes/setup.sh
 #/etc/skel
 cp ~/.fzf /etc/skel
-cp -r ~/.config /etc/skel
+cp -rf ~/.config /etc/skel
 
 read -rp "Quieres una configuracion determinada si/no" respuesta
 if [ "$respuesta" == "si" ]
 then
-    ~/git/clone/zsh-with-plugins-and-more/Themes.sh
+    ./Themes.sh
 else
     echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
 fi
