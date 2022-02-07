@@ -9,17 +9,17 @@ cd ~/git/clone/zsh-with-plugins-and-more
 git clone --depth=1 https://github.com/adi1090x/polybar-themes.git 
 chmod +x ~/git/clone/polybar-themes/setup.sh
 
-cp ./config/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
-cp ./config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
-rm ~/.wallpaper/wallpaper.jpg
-cp ./config/wallpaper/wallpaper.jpg ~/.wallpapers
+cp -rf ./config/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
+cp -rf ./config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
+rm ~/.wallpapers/wallpaper.jpg
+cp -rf ./config/wallpapers/wallpaper.jpg ~/.wallpapers
 rm -r ./polybar-themes/simple/shapes
 cp -rf ./config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/
 
 #Picom
 mkdir ~/.config/picom
 
-cp -rf ./config/picom ~/.config
+ ./config/picom ~/.config
 #Instalacion de zsh y mas paquetes
 apt install zsh ranger xclip snapd tree
 ##Instalacion de visual studio code
@@ -45,7 +45,7 @@ mv Hack.zip /usr/share/fonts
 unzip /usr/share/fonts/Hack.zip
 
 mkdir /usr/share/zsh-p10k 
-cp -rf ./powerlevel10k /usr/share/zsh-p10k
+./powerlevel10k /usr/share/zsh-p10k
 #sudo cp -rf ./{.p10k.zsh,.zshrc} /etc/skel
 #sudo cp -rf ./{.p10k.zsh,.zshrc} $HOME
 #sudo cp -rf ./{.p10k.zsh,.zshrc} /root
@@ -59,7 +59,7 @@ usermod --shell /usr/bin/zsh root
 
 #Instalacion de fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-cp ~/.fzf /root
+cp -rf ~/.fzf /root
 /root/.fzf/install
 /etc/skel/.fzf/install
 ~/.fzf/install
@@ -68,7 +68,7 @@ ln -s ~/.zshrc /root/.zshrc
 ln -s ~/.p10k.zsh /root/.p10k.zsh 
 ~/git/clone/polybar-themes/setup.sh
 #/etc/skel
-cp ~/.fzf /etc/skel
+cp -rf ~/.fzf /etc/skel
 cp -rf ~/.config /etc/skel
 
 read -rp "Quieres una configuracion determinada si/no" respuesta

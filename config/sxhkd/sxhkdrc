@@ -4,7 +4,8 @@
 
 # terminal emulator
 super + Return
-	gnome-terminal #exo-open --launch TerminalEmulator
+	gnome-terminal
+#exo-open --launch TerminalEmulator
 
 # program launcher
 super + d
