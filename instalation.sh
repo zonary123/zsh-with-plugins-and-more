@@ -17,8 +17,6 @@ cp -r ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple
 
 #Picom
 mkdir ~/.config/picom
-cd ~/.config/picom
-cp ~/Descargas/blue-sky/picom.conf .
 
 cp -r ./config/picom ~/.config
 #Instalacion de zsh y mas paquetes
