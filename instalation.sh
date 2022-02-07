@@ -4,18 +4,16 @@ apt install screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh
 apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-devsudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-dev
 apt-get install libuv1-dev
 git clone https://github.com/yorkox0/autoBspwm
-python3 ./autoBspwm/main.py
-mkdir ~/git
-mkdir ~/git/clone
-cd ~/git/clone
+python3 ~/git/clone/zsh-with-plugins-and-more/autoBspwm/main.py
 git clone --depth=1 https://github.com/adi1090x/polybar-themes.git 
 chmod +x ~/git/clone/polybar-themes/setup.sh
+
 cp ~/git/clone/zsh-with-plugins-and-more/config/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
 cp ~/git/clone/zsh-with-plugins-and-more/config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 rm ~/.wallpaper/wallpaper.jpg
-cp ./config/wallpaper/wallpaper.jpg ~/.wallpapers
-rm -r ~/git/clone/polybar-themes/simple/shapes
-cp -r ./config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/
+cp ~/git/clone/zsh-with-plugins-and-more/config/wallpaper/wallpaper.jpg ~/.wallpapers
+rm -r ~/git/clone/zsh-with-plugins-and-more/polybar-themes/simple/shapes
+cp -r ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/
 
 #Picom
 mkdir ~/.config/picom
@@ -77,7 +75,7 @@ cp -r ~/.config /etc/skel
 read -rp "Quieres una configuracion determinada si/no" respuesta
 if [ "$respuesta" == "si" ]
 then
-    ./Themes.sh
+    ~/git/clone/zsh-with-plugins-and-more/Themes.sh
 else
     echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
 fi
