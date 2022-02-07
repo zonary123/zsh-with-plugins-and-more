@@ -12,9 +12,10 @@ chmod +x ~/git/clone/polybar-themes/setup.sh
 cp -rf ~/git/clone/zsh-with-plugins-and-more/config/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
 cp -rf ~/git/clone/zsh-with-plugins-and-more/config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 rm ~/.wallpapers/wallpaper.jpg
+rm -r ~/.config/polybar/shapes
 cp -rf ~/git/clone/zsh-with-plugins-and-more/config/wallpaper/wallpaper.jpg ~/.wallpapers
-cp -rf ~/git/clone/zsh-with-plugins-and-more/polybar-themes/simple/shapes ~/.config/polybar/
-cp -rf ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple ~/git/clone/polybar-themes/simple/
+cp -rf ~/git/clone/zsh-with-plugins-and-more/config/polybar/shapes ~/.config/polybar/
+cp -rf ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
 
 #Picom
 mkdir ~/.config/picom
