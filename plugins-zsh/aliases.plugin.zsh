@@ -4,4 +4,4 @@ alias -g T='| tail'
 alias -g G='| grep'
 alias -g L="| less"
 alias -g M="| most"
-
+alias -g ?="--help"
