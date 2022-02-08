@@ -8,7 +8,7 @@ Tambien se instalara unas tipografias para la terminal. Tendras que cambiar la t
   mkdir ~/git
   mkdir ~/git/clone
   git clone https://github.com/zonary123/zsh-with-plugins-and-more
-  cd /zsh-with-plugins-and-more
+  cd ~/git/clone/zsh-with-plugins-and-more
   sudo ./instalation
 ```
 ## Instalacion al terminar
