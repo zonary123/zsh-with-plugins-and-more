@@ -1,5 +1,5 @@
 source /usr/share/zsh-p10k/powerlevel10k/powerlevel10k.zsh-theme
-
+#
 # Fix the Java Problem
 export _JAVA_AWT_WM_NONREPARENTING=1
 
