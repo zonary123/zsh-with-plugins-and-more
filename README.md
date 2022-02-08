@@ -7,7 +7,7 @@ Tambien se instalara unas tipografias para la terminal. Tendras que cambiar la t
 ```ini
   mkdir ~/git
   mkdir ~/git/clone
-  git clone https://github.com/zonary123/zsh-with-plugins-and-more
+  git clone https://github.com/zonary123/zsh-with-plugins-and-more >> ~/git/clone
   cd ~/git/clone/zsh-with-plugins-and-more
   ./instalation.sh
 ```
