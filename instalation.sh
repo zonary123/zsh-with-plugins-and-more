@@ -3,11 +3,16 @@ apt update && apt upgrade
 apt install screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
 apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-devsudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-dev
 apt install libuv1-dev
+
 git clone https://github.com/yorkox0/autoBspwm
+
 python3 /home/carlos/git/clone/zsh-with-plugins-and-more/autoBspwm/main.py
+
 cd /home/carlos/git/clone/zsh-with-plugins-and-more
+
 git clone --depth=1 https://github.com/adi1090x/polybar-themes.git 
-chmod +x /home/carlos/git/clone/polybar-themes/setup.sh
+chmod +x /home/carlos/git/clone/zsh-with-plugins-and-more/polybar-themes/setup.sh
+/home/carlos/git/clone/zsh-with-plugins-and-more/polybar-themes/setup.sh
 
 cp -rf ./config/bspwm /home/carlos/.config/
 cp -rf ./config/sxhkd/sxhkdrc /home/carlos/.config/sxhkd/sxhkdrc
@@ -22,7 +27,7 @@ mkdir /home/carlos/.config/picom
 
 cp -rf /home/carlos/git/clone/zsh-with-plugins-and-more/config/picom /home/carlos/.config
 #Instalacion de zsh y mas paquetes
-apt install zsh ranger xclip snapd tree gnome-terminal
+apt install zsh ranger xclip snapd tree
 ##Instalacion de visual studio code
 #systemctl start snapd.service
 #snap install --classic code
