@@ -43,7 +43,7 @@ sudo chmod +x /home/carlos/git/clone/zsh-with-plugins-and-more/polybar-themes/se
 /home/carlos/git/clone/zsh-with-plugins-and-more/polybar-themes/setup.sh
 
 sudo cp -rf ./config/bspwm /home/carlos/.config/
-sudo cp -rf ./config/sxhkd/sxhkdrc /home/carlos/.config/sxhkd/sxhkdrc
+sudo cp -rf ./config/sxhkd /home/carlos/.config
 sudo rm -r /home/carlos/.wallpapers/wallpaper.jpg
 sudo rm -r /home/carlos/.config/polybar/shapes
 sudo cp -rf ./config/.wallpapers /home/carlos
