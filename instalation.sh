@@ -131,6 +131,6 @@ if [ "$respuesta" == "si" ]
 then
     ./Themes.sh
 else
-    echo 'source /home/carlos/powerlevel10k/powerlevel10k.zsh-theme' >> /home/carlos/.zshrc
+    p10k configure
 fi
 sudo apt update && sudo apt upgrade
