@@ -117,6 +117,10 @@ sudo cp -rf /home/carlos/.fzf /root
 ln -s /home/carlos/.zshrc /root/.zshrc 
 ln -s /home/carlos/.p10k.zsh /root/.p10k.zsh 
 /home/carlos/git/clone/polybar-themes/setup.sh
+sudo cp -rf ./config/sxhkd /home/carlos/.config
+sudo cp -rf ./config/polybar/polybar-themes/simple/shapes /home/carlos/.config/polybar
+sudo cp -rf ./config/polybar/polybar-themes/simple/shapes /home/carlos/.config/polybar
+sudo chmod -R 777 /home/carlos/.config/polybar
 #/etc/skel
 sudo cp -rf /home/carlos/.fzf /etc/skel
 sudo cp -rf /home/carlos/.config /etc/skel
