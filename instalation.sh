@@ -107,8 +107,8 @@ sudo cp -rf /home/carlos/.fzf /root
 /etc/skel/.fzf/install
 /home/carlos/.fzf/install
 
-ln -s /home/carlos/.zshrc /root/.zshrc 
-ln -s /home/carlos/.p10k.zsh /root/.p10k.zsh 
+sudo ln -s /home/carlos/.zshrc /root/.zshrc 
+sudo ln -s /home/carlos/.p10k.zsh /root/.p10k.zsh 
 /home/carlos/git/clone/polybar-themes/setup.sh
 sudo cp -rf ./config/sxhkd /home/carlos/.config
 sudo cp -rf ./config/polybar/polybar-themes/simple/shapes /home/carlos/.config/polybar
