@@ -54,19 +54,12 @@ sudo cp -rf ./config/polybar/polybar-themes/simple/shapes /home/carlos/.config/p
 sudo cp -rf ./config/polybar/polybar-themes/simple/shapes /home/carlos/.config/polybar
 
 #Picom
-mkdir /home/carlos/.config/picom
+sudo mkdir /home/carlos/.config/picom
 sudo cp -rf /home/carlos/git/clone/zsh-with-plugins-and-more/config/picom /home/carlos/.config
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
 sudo apt install zsh ranger xclip snapd tree
-##Instalacion de visual studio code
-
-if ()    # ← see 'man test' for available unary and binary operators.
-then
-    
-else
-    
-fi
+##Instalacion de visual studio codes
 
 #systemctl start snapd.service
 #snap install --classic code
@@ -103,8 +96,8 @@ sudo cp -rf ./plugins-zsh /usr/share
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Cambio de terminal a los perfiles $USERNAME y root"
 #Cambio de la tesudo rminal del usuario a zsh
-usesudo rmod --shell /usr/bin/zsh $USERNAME
-usesudo rmod --shell /usr/bin/zsh root
+sudo usermod --shell /usr/bin/zsh $USERNAME
+sudo usermod --shell /usr/bin/zsh root
 
 #Instalacion de fzf
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de fzf"
