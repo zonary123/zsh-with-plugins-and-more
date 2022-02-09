@@ -27,9 +27,12 @@ echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes"
 
 sudo apt update && sudo apt upgrade 
 sudo apt install screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
-sudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xsudo rm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsonsudo cpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-devsudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xsudo rm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsonsudo cpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-dev
+sudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xsudo rm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsonsudo cpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-devsudo 
+apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xsudo rm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsonsudo cpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-dev
 sudo apt install libuv1-dev libev
 sudo apt install polybar
+sudo apt update
+sudo apt install slim libpam0g-dev libxrandr-dev libfreetype6-dev libimlib2-dev libxft-dev
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Git clone del repositorio de yorkox0/autoBspwm"
 git clone https://github.com/yorkox0/autoBspwm
@@ -42,12 +45,12 @@ git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
 sudo chmod +x /home/carlos/git/clone/zsh-with-plugins-and-more/polybar-themes/setup.sh
 /home/carlos/git/clone/zsh-with-plugins-and-more/polybar-themes/setup.sh
 
-sudo cp -rf ./config/bspwm /home/carlos/.config/
+sudo cp -rf ./config/bspwm /home/carlos/.config
 sudo cp -rf ./config/sxhkd /home/carlos/.config
 sudo rm -r /home/carlos/.wallpapers/wallpaper.jpg
 sudo rm -r /home/carlos/.config/polybar/shapes
 sudo cp -rf ./config/.wallpapers /home/carlos
-sudo cp -rf ./config/polybar/shapes /home/carlos/.config/polybar/
+sudo cp -rf ./config/polybar/polybar-themes/simple/shapes /home/carlos/.config/polybar
 sudo cp -rf ./config/polybar/polybar-themes/simple/shapes /home/carlos/.config/polybar
 
 #Picom
@@ -57,6 +60,14 @@ sudo cp -rf /home/carlos/git/clone/zsh-with-plugins-and-more/config/picom /home/
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
 sudo apt install zsh ranger xclip snapd tree
 ##Instalacion de visual studio code
+
+if ()    # ← see 'man test' for available unary and binary operators.
+then
+    
+else
+    
+fi
+
 #systemctl start snapd.service
 #snap install --classic code
 
