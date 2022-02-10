@@ -155,7 +155,6 @@ then
     sudo systemctl start snapd.service
     sudo snap install --classic code
     code .
-    timeout 5
     ~/git/clone/zsh-with-plugins-and-more/config/vscode/vscode.sh
     ~/git/clone/zsh-with-plugins-and-more/config/script/snap.sh
     clear
