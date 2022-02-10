@@ -26,7 +26,7 @@ chmod -R 777 *
 clear
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes"
 sudo apt update && sudo apt upgrade 
-sudo apt install screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
+sudo apt install libev-dev screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
 sudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xsudo rm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsonsudo cpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-dev
 sudo apt install libuv1-dev libev
 sudo apt install polybar
@@ -52,7 +52,7 @@ sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/bspwm ~/.config
 sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/sxhkd ~/.config
 sudo rm -r ~/.wallpapers/wallpaper.jpg
 sudo rm -r ~/.config/polybar/shapes
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/.wallpapers ~
+sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/.wallpapers ~/
 sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
 sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
 
@@ -77,7 +77,7 @@ sudo rm ~/git/clone/zsh-with-plugins-and-more/bat_0.19.0_amd64.deb
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Clonacion de repositorios github powerlevel10k | plugins de zsh => zsh-autosuggestions y zsh-syntax-highlighting"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/git/clone/zsh-with-plugins-and-more/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/git/clone/zsh-with-plugins-and-more/plugins-zsh/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/git/clone/zsh-with-plugins-and-more/plugins-zsh/zsh-syntax-highlighting
 
@@ -86,7 +86,7 @@ sudo mv ~/git/clone/zsh-with-plugins-and-more/Hack.zip /usr/share/fonts
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Moviendo archivos .p10k.zsh y .zshrc al directorio personal del usuario directorio de root y a al directorio /etc/skel"
-mkdir /usr/share/zsh-p10k 
+sudo mkdir /usr/share/zsh-p10k 
 sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/powerlevel10k /usr/share/zsh-p10k
 sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/{.p10k.zsh,.zshrc} /etc/skel
 sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/{.p10k.zsh,.zshrc} ~
@@ -143,7 +143,7 @@ read code
 if [ "$code" == "si" ]
 then
     sudo cp ~/git/clone/zsh-with-plugins-and-more/config/script/snap.sh /home/$USER/scripts
-    sudo chmod 555 /etc/crontab
+    sudo chmod 777 /etc/crontab
     sudo chmod +x /home/$USER/scripts/snap.sh
     echo "@reboot root /home/$USER/scripts/snap.sh" >> /etc/crontab
     sudo chmod 644 /etc/crontab
@@ -162,6 +162,7 @@ then
     sudo dpkg -i ./gitkraken-amd64.deb
     clear
 fi
+sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/powerlevel10k /usr/share/zsh-p10k
 
 #Tipografias
 cd /usr/share/fonts
