@@ -63,11 +63,6 @@ clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
 sudo apt install zsh ranger xclip snapd tree pip
-##Instalacion de visual studio codes
-
-#systemctl start snapd.service
-#snap install --classic code
-clear
 
 #Comandos wget
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de bat lsd y descarga de la fuente de hack nerd fonts"
@@ -138,12 +133,35 @@ else
     p10k configure
 fi
 clear
-sudo cp ~/git/clone/zsh-with-plugins-and-more/config/script/snap.sh /home/$USER/scripts
-sudo chmod 555 /etc/crontab
-sudo chmod +x /home/$USER/scripts/snap.sh
-echo "@reboot root /home/$USER/scripts/snap.sh" >> /etc/crontab
-sudo chmod 644 /etc/crontab
+
 sudo apt update && sudo apt upgrade
+clear
+
+##Instalacion de visual studio codes
+echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Visual studio code"
+read code
+if [ "$code" == "si" ]
+then
+    sudo cp ~/git/clone/zsh-with-plugins-and-more/config/script/snap.sh /home/$USER/scripts
+    sudo chmod 555 /etc/crontab
+    sudo chmod +x /home/$USER/scripts/snap.sh
+    echo "@reboot root /home/$USER/scripts/snap.sh" >> /etc/crontab
+    sudo chmod 644 /etc/crontab
+    sudo systemctl start snapd.service
+    sudo snap install --classic code
+    ./config/vscode/vscode.sh
+    clear
+fi
+clear
+
+echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar gitkraken"
+read gitkraken
+if [ "$gitkraken" == "si" ]
+then
+    wget https://www.gitkraken.com/download/linux-deb
+    sudo dpkg -i ./gitkraken-amd64.deb
+    clear
+fi
 
 #Tipografias
 cd /usr/share/fonts
