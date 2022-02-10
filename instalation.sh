@@ -140,14 +140,23 @@ echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Visual studio co
 read code
 if [ "$code" == "si" ]
 then
-    sudo cp ~/git/clone/zsh-with-plugins-and-more/config/script/snap.sh /home/$USER/scripts
+    sudo chmod -R 777 ./config/script
+    sudo cp ~/git/clone/zsh-with-plugins-and-more/config/script/snap.sh ~/scripts
     sudo chmod 777 /etc/crontab
+    make ~/scripts
     sudo chmod +x /home/$USER/scripts/snap.sh
-    echo "@reboot root /home/$USER/scripts/snap.sh" >> /etc/crontab
+    if [[ "@reboot root $HOME/scripts/snap.sh" == $(sudo cat /etc/crontab | grep "@reboot root $HOME/scripts/snap.sh") ]]
+    then
+        echo "Ya esta escrito en crontab"
+    else
+        echo "@reboot root /home/$USER/scripts/snap.sh" >> /etc/crontab
+    fi
     sudo chmod 644 /etc/crontab
     sudo systemctl start snapd.service
     sudo snap install --classic code
+    code .
     ./config/vscode/vscode.sh
+    ./config/script/snap.sh
     clear
 fi
 clear

@@ -1,7 +1,7 @@
 #!/bin/bash
 systemctl start snapd.service
 snap install --classic code
-sudo cp -rf ./config/vscode/settings.json $HOME/.config/Code/User
+sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/vscode/settings.json $HOME/.config/Code/User
 #====================================================#
 #                       Upgrades                     #
 #====================================================#
