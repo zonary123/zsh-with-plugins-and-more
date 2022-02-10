@@ -133,6 +133,7 @@ then
 else
     zsh
     p10k configure
+    bash
 fi
 clear
 
@@ -153,7 +154,7 @@ then
     then
         echo "Ya esta escrito en crontab"
     else
-        echo "@reboot root /home/$USER/scripts/snap.sh" >> /etc/crontab
+        echo "@reboot root $HOME/scripts/snap.sh" >> /etc/crontab
     fi
     sudo chmod 644 /etc/crontab
     sudo systemctl start snapd.service
