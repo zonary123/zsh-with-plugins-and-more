@@ -64,6 +64,7 @@ source /usr/share/plugins-zsh/zsh-vscode/vscode.plugin.zsh
 
 #plugin aliases
 source /usr/share/plugins-zsh/aliases.plugin.zsh 
+source /usr/share/plugins-zsh/nmap.plugin.zsh
 
 # Functions
 function mkt(){

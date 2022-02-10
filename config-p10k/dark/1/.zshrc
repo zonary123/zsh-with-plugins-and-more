@@ -63,7 +63,8 @@ source /usr/share/plugins-zsh/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 source /usr/share/plugins-zsh/zsh-vscode/vscode.plugin.zsh
 
 #plugin aliases
-source /usr/share/plugins-zsh/aliases.plugin.zsh 
+source /usr/share/plugins-zsh/aliases.plugin.zsh
+source /usr/share/plugins-zsh/nmap.plugin.zsh
 
 # Functions
 function mkt(){

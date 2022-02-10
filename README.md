@@ -11,7 +11,7 @@ En el archivo instalation.sh de zsh-with-plugins-and-more cambiar el nombre carl
   cd ~/git/clone
   git clone https://github.com/zonary123/zsh-with-plugins-and-more
   cd ~/git/clone/zsh-with-plugins-and-more
-  #./instalation.sh
+  ./instalation.sh
 ```
 ## Instalacion al terminar
 ![](src/img/linux.png)
