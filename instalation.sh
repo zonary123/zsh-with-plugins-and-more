@@ -113,9 +113,10 @@ sudo cp -fr ~/.fzf /root
 
 sudo ln -s ~/.zshrc /root/.zshrc 
 sudo ln -s ~/.p10k.zsh /root/.p10k.zsh 
-sudo cp -r ~/git/clone/zsh-with-plugins-and-more/config/sxhkd ~/.config
-sudo cp -r ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
-sudo cp -r ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
+sudo chmod -R 777 ~/.config/polybar
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/sxhkd ~/.config
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
 sudo chmod -R 777 ~/.config/polybar
 #/etc/skel
 sudo cp -fr ~/.fzf /etc/skel
