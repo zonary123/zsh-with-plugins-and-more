@@ -48,17 +48,16 @@ git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
 sudo chmod +x ~/git/clone/zsh-with-plugins-and-more/polybar-themes/setup.sh
 ~/git/clone/zsh-with-plugins-and-more/polybar-themes/setup.sh
 
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/bspwm ~/.config
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/sxhkd ~/.config
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/bspwm ~/.config
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/sxhkd ~/.config
 sudo rm -r ~/.wallpapers/wallpaper.jpg
 sudo rm -r ~/.config/polybar/shapes
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/.wallpapers ~/
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/.wallpapers ~/
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
 
 #Picom
 sudo mkdir ~/.config/picom
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/picom ~/.config
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/picom ~/.config
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
@@ -87,15 +86,15 @@ clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Moviendo archivos .p10k.zsh y .zshrc al directorio personal del usuario directorio de root y a al directorio /etc/skel"
 sudo mkdir /usr/share/zsh-p10k 
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/powerlevel10k /usr/share/zsh-p10k
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/{.p10k.zsh,.zshrc} /etc/skel
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/{.p10k.zsh,.zshrc} ~
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/{.p10k.zsh,.zshrc} /root
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/powerlevel10k /usr/share/zsh-p10k
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/{.p10k.zsh,.zshrc} /etc/skel
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/{.p10k.zsh,.zshrc} ~
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/{.p10k.zsh,.zshrc} /root
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de los plugins"
 #Plugins ZSH
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/plugins-zsh /usr/share
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/plugins-zsh /usr/share
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Cambio de terminal a los perfiles $USER y root"
@@ -107,21 +106,20 @@ clear
 #Instalacion de fzf
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de fzf"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-sudo cp -rf ~/.fzf /root
+sudo cp -fr ~/.fzf /root
 /root/.fzf/install
 /etc/skel/.fzf/install
 ~/.fzf/install
 
 sudo ln -s ~/.zshrc /root/.zshrc 
 sudo ln -s ~/.p10k.zsh /root/.p10k.zsh 
-~/git/clone/zsh-with-plugins-and-more/polybar-themes/setup.sh
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/sxhkd ~/.config
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
+sudo cp -r ~/git/clone/zsh-with-plugins-and-more/config/sxhkd ~/.config
+sudo cp -r ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
+sudo cp -r ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
 sudo chmod -R 777 ~/.config/polybar
 #/etc/skel
-sudo cp -rf ~/.fzf /etc/skel
-sudo cp -rf ~/.config /etc/skel
+sudo cp -fr ~/.fzf /etc/skel
+sudo cp -fr ~/.config /etc/skel
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Configuracion del zsh a partir de unas configuraciones determinadas"
@@ -162,7 +160,7 @@ then
     sudo dpkg -i ./gitkraken-amd64.deb
     clear
 fi
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/powerlevel10k /usr/share/zsh-p10k
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/powerlevel10k /usr/share/zsh-p10k
 
 #Tipografias
 cd /usr/share/fonts
