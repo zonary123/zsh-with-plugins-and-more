@@ -38,7 +38,7 @@ La tipografia se instala sola pero tienes que cambiarla manualmente en la termin
 - [zsh-sudo](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo)
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 - [zsh-vscode](https://github.com/valentinocossar/vscode)
-
+- [nmap-plugin-zsh](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/nmap)
 
 
 

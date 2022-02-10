@@ -62,7 +62,7 @@ sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/picom ~/.config
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
-sudo apt install zsh ranger xclip snapd tree
+sudo apt install zsh ranger xclip snapd tree pip
 ##Instalacion de visual studio codes
 
 #systemctl start snapd.service
@@ -149,3 +149,10 @@ sudo apt update && sudo apt upgrade
 cd /usr/share/fonts
 sudo unzip /usr/share/fonts/Hack.zip
 clear
+
+
+
+#========================================#
+#               VIEW                     #
+#========================================#
+#https://github.com/ryanoasis/powerline-extra-symbols

@@ -14,6 +14,8 @@ code --install-extension alefragnani.bookmarks
 code --install-extension hookyqr.beautify
 code --install-extension christian-kohler.path-intellisense
 code --install-extension ionutvmi.path-autocomplete
+code --install-extension mhutchie.git-graph
+code --install-extension Shan.code-settings-sync
 #
 #====================================================#
 #                       Colors                       #
@@ -24,9 +26,11 @@ code --install-extension naumovs.color-highlight
 #                       bash                         #
 #====================================================#
 code --install-extension designbyajay.bash-cli-snippets
+
 #====================================================#
-#                       sh                           #
+#                       ssh                          #
 #====================================================#
+code --install-extension ms-vscode-remote.remote-ssh
 #====================================================#
 #                       HTML                         #
 #====================================================#
@@ -43,6 +47,14 @@ code --install-extension ecmel.vscode-html-css
 #====================================================#
 code --install-extension xabikos.javascriptsnippets
 #====================================================#
+#                       CSV                          #
+#====================================================#
+code --install-extension mechatroner.rainbow-csv
+#====================================================#
+#                       React                        #
+#====================================================#
+code --install-extension xabikos.ReactSnippets
+#====================================================#
 #                       Icons                        #
 #====================================================#
 code --install-extension pkief.material-icon-theme
@@ -52,3 +64,14 @@ code --install-extension pkief.material-icon-theme
 code --install-extension whizkydee.material-palenight-theme
 code --install-extension unthrottled.doki-theme
 code --install-extension monokai.theme-monokai-pro-vscode
+code --install-extension pawelgrzybek.gatito-theme
+
+clear
+echo "Desea instalar rainglow (Rainglow es un thema con 320 tipos de themas de colores)"
+read
+if [[ "$rainglow" == "si" ]]    # ← see 'man bash' for valid conditional statements.
+then
+    code --install-extension daylerees.rainglow
+else
+    echo "Instalacion de extensiones terminada"
+fi
