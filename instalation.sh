@@ -113,8 +113,8 @@ sudo cp -fr ~/.fzf /root
 /etc/skel/.fzf/install
 ~/.fzf/install
 
-sudo ln -s ~/.zshrc /root/.zshrc
-sudo ln -s ~/.p10k.zsh /root/.p10k.zsh
+sudo ln -sf ~/.zshrc /root/.zshrc
+sudo ln -sf ~/.p10k.zsh /root/.p10k.zsh
 sudo chmod -R 777 ~/.config/polybar
 sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/sxhkd ~/.config
 sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
@@ -131,6 +131,7 @@ if [ "$respuesta" == "si" ]
 then
     ~/git/clone/zsh-with-plugins-and-more/Themes.sh
 else
+    zsh
     p10k configure
 fi
 clear

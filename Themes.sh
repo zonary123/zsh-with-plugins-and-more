@@ -11,11 +11,16 @@ then
         then
             sudo cp -rf ./config-p10k/dark/1/{.p10k.zsh,.zshrc} $HOME
             sudo cp -rf ./config-p10k/dark/1/{.p10k.zsh,.zshrc} /etc/skel
+            sudo ln -sf ~/.zshrc /root/.zshrc
+            sudo ln -sf ~/.p10k.zsh /root/.p10k.zsh
             zsh
         elif [ "2" == "$dark" ] 
         then
             sudo cp -rf ./config-p10k/dark/2/{.p10k.zsh,.zshrc} $HOME
             sudo cp -rf ./config-p10k/dark/2/{.p10k.zsh,.zshrc} /etc/skel
+            sudo ln -sf ~/.zshrc /root/.zshrc
+            sudo ln -sf ~/.p10k.zsh /root/.p10k.zsh
+            zsh
         elif [ "3" == "$dark" ] 
         then
             sudo cp -rf ./config-p10k/dark/3/{.p10k.zsh,.zshrc} $HOME
@@ -33,6 +38,8 @@ then
         then
             sudo cp -rf ./config-p10k/rainbow/1/{.p10k.zsh,.zshrc} $HOME
             sudo cp -rf ./config-p10k/rainbow/1/{.p10k.zsh,.zshrc} /etc/skel
+            sudo ln -sf ~/.zshrc /root/.zshrc
+            sudo ln -sf ~/.p10k.zsh /root/.p10k.zsh
             zsh
         elif [ "2" == "$rainbow" ] 
         then
