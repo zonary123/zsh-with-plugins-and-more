@@ -2,10 +2,13 @@
 # wm independent hotkeys
 #
 
+super + ctrl + g
+	gnome-terminal
+	
 # terminal emulator
 super + Return
-	gnome-terminal
-#exo-open --launch TerminalEmulator
+	exo-open --launch TerminalEmulator
+#gnome-terminal
 
 # program launcher
 super + d

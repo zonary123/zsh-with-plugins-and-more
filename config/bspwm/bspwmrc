@@ -23,7 +23,7 @@ wmname LG3D &
 bspc config focus_follows_pointer true
 bspc config border_width 0
 
-#picom --experimental-backends &
+picom --experimental-backends &
 
 ~/.config/polybar/shapes/preview.sh --shapes
 ~/.config/polybar/shapes/scripts/colors-dark.sh --purple
