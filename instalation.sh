@@ -40,7 +40,9 @@ sudo apt update && sudo apt upgrade
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Ejecucion del main.py de yorkox0/autoBspwm"
+cd ~/git/clone/zsh-with-plugins-and-more/autoBspwm
 python3 ~/git/clone/zsh-with-plugins-and-more/autoBspwm/main.py
+cd ~/git/clone/zsh-with-plugins-and-more
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Copiando archivos de configuracion para polybar bspwm sxhkd picom"
@@ -111,8 +113,8 @@ sudo cp -fr ~/.fzf /root
 /etc/skel/.fzf/install
 ~/.fzf/install
 
-sudo ln -s ~/.zshrc /root/.zshrc 
-sudo ln -s ~/.p10k.zsh /root/.p10k.zsh 
+sudo ln -s ~/.zshrc /root/.zshrc
+sudo ln -s ~/.p10k.zsh /root/.p10k.zsh
 sudo chmod -R 777 ~/.config/polybar
 sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/sxhkd ~/.config
 sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
