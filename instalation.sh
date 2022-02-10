@@ -27,18 +27,21 @@ clear
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes"
 sudo apt update && sudo apt upgrade 
 sudo apt install screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
-sudo apt install cmake cmake-data pkg-config python3-sphinx lrrrrrrrrrrrrrrtyyyyyyyytyererre4534444444423qw2232323xzdcdddcfdcszxsxs4ibcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xsudo rm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsonsudo cpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-devsudo 
-apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xsudo rm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsonsudo cpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-dev
+sudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xsudo rm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsonsudo cpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-dev
 sudo apt install libuv1-dev libev
 sudo apt install polybar
-sudo apt update
 sudo apt install slim libpam0g-dev libxrandr-dev libfreetype6-dev libimlib2-dev libxft-dev
+sudo apt update && sudo apt upgrade 
+clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Git clone del repositorio de yorkox0/autoBspwm"
 git clone https://github.com/yorkox0/autoBspwm
+sudo apt update && sudo apt upgrade
+clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Ejecucion del main.py de yorkox0/autoBspwm"
 python3 ~/git/clone/zsh-with-plugins-and-more/autoBspwm/main.py
+clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Copiando archivos de configuracion para polybar bspwm sxhkd picom"
 git clone --depth=1 https://github.com/adi1090x/polybar-themes.git 
@@ -56,6 +59,7 @@ sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/
 #Picom
 sudo mkdir ~/.config/picom
 sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/picom ~/.config
+clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
 sudo apt install zsh ranger xclip snapd tree
@@ -63,6 +67,7 @@ sudo apt install zsh ranger xclip snapd tree
 
 #systemctl start snapd.service
 #snap install --classic code
+clear
 
 #Comandos wget
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de bat lsd y descarga de la fuente de hack nerd fonts"
@@ -74,6 +79,7 @@ sudo dpkg -i ~/git/clone/zsh-with-plugins-and-more/bat_0.19.0_amd64.deb
 sudo rm ~/git/clone/zsh-with-plugins-and-more/lsd_0.21.0_amd64.deb
 sudo rm ~/git/clone/zsh-with-plugins-and-more/bat_0.19.0_amd64.deb
 #Comandos Git clone
+clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Clonacion de repositorios github powerlevel10k | plugins de zsh => zsh-autosuggestions y zsh-syntax-highlighting"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/git/clone/zsh-with-plugins-and-more/powerlevel10k
@@ -82,22 +88,26 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/git/clone/zsh-w
 
 #Instalacion de la tipografia Hack nerd Fonts
 sudo mv ~/git/clone/zsh-with-plugins-and-more/Hack.zip /usr/share/fonts
+clear
 
-    echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Moviendo archivos .p10k.zsh y .zshrc al directorio personal del usuario directorio de root y a al directorio /etc/skel"
+echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Moviendo archivos .p10k.zsh y .zshrc al directorio personal del usuario directorio de root y a al directorio /etc/skel"
 mkdir /usr/share/zsh-p10k 
 sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/powerlevel10k /usr/share/zsh-p10k
 sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/{.p10k.zsh,.zshrc} /etc/skel
 sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/{.p10k.zsh,.zshrc} ~
 sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/{.p10k.zsh,.zshrc} /root
+clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de los plugins"
 #Plugins ZSH
 sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/plugins-zsh /usr/share
+clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Cambio de terminal a los perfiles $USER y root"
 #Cambio de la tesudo rminal del usuario a zsh
 sudo usermod --shell /usr/bin/zsh $USER
 sudo usermod --shell /usr/bin/zsh root
+clear
 
 #Instalacion de fzf
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de fzf"
@@ -117,6 +127,7 @@ sudo chmod -R 777 ~/.config/polybar
 #/etc/skel
 sudo cp -rf ~/.fzf /etc/skel
 sudo cp -rf ~/.config /etc/skel
+clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Configuracion del zsh a partir de unas configuraciones determinadas"
 read -rp "Quieres una configuracion determinada si/no" respuesta
@@ -126,10 +137,15 @@ then
 else
     p10k configure
 fi
-mv ~/git/clone/zsh-with-plugins-and-more/config/script/snap.sh
+clear
+sudo cp ~/git/clone/zsh-with-plugins-and-more/config/script/snap.sh /home/$USER/scripts
 sudo chmod 555 /etc/crontab
-echo "@reboot carlos ~/scripts/snap.sh" >> /etc/crontab
+sudo chmod +x /home/$USER/scripts/snap.sh
+echo "@reboot root /home/$USER/scripts/snap.sh" >> /etc/crontab
 sudo chmod 644 /etc/crontab
 sudo apt update && sudo apt upgrade
+
+#Tipografias
 cd /usr/share/fonts
 sudo unzip /usr/share/fonts/Hack.zip
+clear
