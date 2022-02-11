@@ -172,8 +172,13 @@ then
     sudo dpkg -i ./gitkraken-amd64.deb
     clear
 fi
-si
-
+clear
+echo -e "${amarillo}[${rojo}*${amarillo}]${verde} La instalacion fue hecha satisfactoriamente"
+if [ "$respuesta" == "no" ]
+then
+    zsh
+    p10k configure
+fi
 
 
 #========================================#
