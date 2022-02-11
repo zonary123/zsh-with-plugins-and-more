@@ -15,6 +15,7 @@ En el archivo instalation.sh de zsh-with-plugins-and-more cambiar el nombre carl
 ```
 ## Instalacion al terminar
 ![](src/img/linux.png)
+![](src/img/linux_1.png)
 ## Inslatacion de bspwm sxhkd automatico
 - [config de s4vitar](https://github.com/yorkox0/autoBspwm)
 - [polybar-themes](https://github.com/adi1090x/polybar-themes)
