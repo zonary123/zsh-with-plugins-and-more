@@ -131,9 +131,7 @@ if [ "$respuesta" == "si" ]
 then
     ~/git/clone/zsh-with-plugins-and-more/Themes.sh
 else
-    zsh
     p10k configure
-    bash
 fi
 clear
 
@@ -146,9 +144,9 @@ read code
 if [ "$code" == "si" ]
 then
     sudo chmod -R 777 ./config/script
+    mkdir ~/scripts
     sudo cp ~/git/clone/zsh-with-plugins-and-more/config/script/snap.sh ~/scripts
     sudo chmod 777 /etc/crontab
-    make ~/scripts
     sudo chmod +x /home/$USER/scripts/snap.sh
     if [[ "@reboot root $HOME/scripts/snap.sh" == $(sudo cat /etc/crontab | grep "@reboot root $HOME/scripts/snap.sh") ]]
     then
@@ -174,12 +172,7 @@ then
     sudo dpkg -i ./gitkraken-amd64.deb
     clear
 fi
-sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/powerlevel10k /usr/share/zsh-p10k
-
-#Tipografias
-cd /usr/share/fonts
-sudo unzip /usr/share/fonts/Hack.zip
-clear
+si
 
 
 
