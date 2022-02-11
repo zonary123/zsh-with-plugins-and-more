@@ -22,7 +22,6 @@ blanco="\e[0;31m"
 #                Start                   #
 #========================================#
 usuario=$USERNAME
-chmod -R 777 *
 clear
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes"
 sudo apt update && sudo apt upgrade 
@@ -64,6 +63,7 @@ clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
 sudo apt install zsh ranger xclip snapd tree pip
+clear
 
 #Comandos wget
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de bat lsd y descarga de la fuente de hack nerd fonts"
@@ -74,9 +74,9 @@ sudo dpkg -i ~/git/clone/zsh-with-plugins-and-more/lsd_0.21.0_amd64.deb
 sudo dpkg -i ~/git/clone/zsh-with-plugins-and-more/bat_0.19.0_amd64.deb
 sudo rm ~/git/clone/zsh-with-plugins-and-more/lsd_0.21.0_amd64.deb
 sudo rm ~/git/clone/zsh-with-plugins-and-more/bat_0.19.0_amd64.deb
-#Comandos Git clone
 clear
 
+#Comandos Git clone
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Clonacion de repositorios github powerlevel10k | plugins de zsh => zsh-autosuggestions y zsh-syntax-highlighting"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/git/clone/zsh-with-plugins-and-more/plugins-zsh/zsh-autosuggestions
