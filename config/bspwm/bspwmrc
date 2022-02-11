@@ -27,3 +27,6 @@ picom --experimental-backends &
 
 ~/.config/polybar/shapes/preview.sh --shapes
 ~/.config/polybar/shapes/scripts/colors-dark.sh --purple
+
+#Script cambio de color segun la hora del dia comentar la linea 29 para poder usar el script
+~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes/scripts/colores.sh
