@@ -23,6 +23,7 @@ blanco="\e[0;31m"
 #========================================#
 usuario=$USERNAME
 clear
+sudo chmod -R 777 config
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes "
 sudo apt update && sudo apt upgrade 
 sudo apt install libev-dev screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
@@ -173,6 +174,13 @@ then
     clear
 fi
 clear
+echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar imagenes de fondo de pantalla"
+read wallpapers
+if [ "$wallpapers" == "si" ]
+then
+    ~/config/script/imagenes.sh
+    clear
+fi
 echo -e "${amarillo}[${rojo}*${amarillo}]${verde} La instalacion fue hecha satisfactoriamente"
 if [ "$respuesta" == "no" ]
 then
