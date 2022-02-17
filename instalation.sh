@@ -150,10 +150,10 @@ clear
 ##Instalacion de visual studio codes
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Visual studio code"
 read code
-if [ "$code" == "si" ]
+if [[ "$code" == "si" ]]
 then
     sudo chmod -R 777 ./config/script
-    mkdir ~/scripts
+    sudo mkdir ~/scripts
     sudo cp ~/git/clone/zsh-with-plugins-and-more/config/script/snap.sh ~/scripts
     sudo chmod 777 /etc/crontab
     sudo chmod +x /home/$USER/scripts/snap.sh
@@ -164,7 +164,7 @@ then
         echo "@reboot root $HOME/scripts/snap.sh" >> /etc/crontab
     fi
     sudo chmod 644 /etc/crontab
-    sudo systemctl start snapd.service
+    sudo systemctl restart snapd.service
     sudo snap install --classic code
     code .
     ~/git/clone/zsh-with-plugins-and-more/config/vscode/vscode.sh

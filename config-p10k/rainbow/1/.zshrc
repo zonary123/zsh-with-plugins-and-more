@@ -1,3 +1,32 @@
+#========================================#
+#               Colores                  #
+#========================================#
+export negro="\e[0;30m"
+export grisoscuro="\e[0;31m"
+export azul="\e[0;34m"
+export azulreslatado="\e[1;31m"
+export verde="\e[0;32m"
+export verderesaltado="\e[0;32m"
+export cian="\e[0;36m"
+export cianresaltado="\e[1;36m"
+export rojo="\e[0;31m"
+export rojoresaltado="\e[1;31m"
+export purpura="\e[0;35m"
+export purpuraresaltado="\e[1;35m"
+export cafe="\e[0;33m"
+export amarillo="\e[1;33m"
+export gris="\e[0;37m"
+export blanco="\e[0;31m"
+
+#========================================#
+#            Fzf-theme                   #
+#========================================#
+export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'
+
+#========================================#
+#                Start                   #
+#========================================#
+
 source /usr/share/zsh-p10k/powerlevel10k/powerlevel10k.zsh-theme
 
 # Fix the Java Problem

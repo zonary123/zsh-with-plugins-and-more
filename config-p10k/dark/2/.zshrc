@@ -1,22 +1,22 @@
 #========================================#
 #               Colores                  #
 #========================================#
-#negro="\e[0;30m"
-#grisoscuro="\e[0;31m"
-#azul="\e[0;34m"
-#azulreslatado="\e[1;31m"
-#verde="\e[0;32m"
-#verderesaltado="\e[0;32m"
-#cian="\e[0;36m"
-#cianresaltado="\e[1;36m"
-#rojo="\e[0;31m"
-#rojoresaltado="\e[1;31m"
-#purpura="\e[0;35m"
-#purpuraresaltado="\e[1;35m"
-#cafe="\e[0;33m"
-#amarillo="\e[1;33m"
-#gris="\e[0;37m"
-#blanco="\e[0;31m"
+export negro="\e[0;30m"
+export grisoscuro="\e[0;31m"
+export azul="\e[0;34m"
+export azulreslatado="\e[1;31m"
+export verde="\e[0;32m"
+export verderesaltado="\e[0;32m"
+export cian="\e[0;36m"
+export cianresaltado="\e[1;36m"
+export rojo="\e[0;31m"
+export rojoresaltado="\e[1;31m"
+export purpura="\e[0;35m"
+export purpuraresaltado="\e[1;35m"
+export cafe="\e[0;33m"
+export amarillo="\e[1;33m"
+export gris="\e[0;37m"
+export blanco="\e[0;31m"
 
 #========================================#
 #            Fzf-theme                   #
@@ -26,6 +26,7 @@ export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f
 #========================================#
 #                Start                   #
 #========================================#
+
 
 source /usr/share/zsh-p10k/powerlevel10k/powerlevel10k.zsh-theme
 
