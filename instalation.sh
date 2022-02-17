@@ -75,6 +75,10 @@ sudo dpkg -i ~/git/clone/zsh-with-plugins-and-more/lsd_0.21.0_amd64.deb
 sudo dpkg -i ~/git/clone/zsh-with-plugins-and-more/bat_0.19.0_amd64.deb
 sudo rm ~/git/clone/zsh-with-plugins-and-more/lsd_0.21.0_amd64.deb
 sudo rm ~/git/clone/zsh-with-plugins-and-more/bat_0.19.0_amd64.deb
+#Instalacion de colores de lsd
+sudo chmod -R +x /usr/share/lsd
+mkdir /usr/share/lsd
+cp ~/git/clone/zsh-with-plugins-and-more/config/ls_colors/ls_colors.sh /usr/share/lsd
 clear
 
 #Comandos Git clone

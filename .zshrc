@@ -66,6 +66,9 @@ source /usr/share/plugins-zsh/zsh-vscode/vscode.plugin.zsh
 source /usr/share/plugins-zsh/aliases.plugin.zsh
 source /usr/share/plugins-zsh/nmap.plugin.zsh
 
+#LSD colors comand ls
+source /usr/share/lsd/ls_colors.sh
+
 # Functions
 function mkt(){
 	mkdir {nmap,content,exploits,scripts}
@@ -101,21 +104,21 @@ function fzf-lovely(){
 
 	if [ "$1" = "h" ]; then
 		fzf -m --reverse --preview-window down:20 --preview '[[ $(file --mime {}) =~ binary ]] &&
- 	                echo {} is a binary file ||
-	                 (bat --style=numbers --color=always {} ||
-	                  highlight -O ansi -l {} ||
-	                  coderay {} ||
-	                  rougify {} ||
-	                  cat {}) 2> /dev/null | head -500'
+ 			echo {} is a binary file ||
+	                (bat --style=numbers --color=always {} ||
+	                highlight -O ansi -l {} ||
+	                coderay {} ||
+	                rougify {} ||
+	            	cat {}) 2> /dev/null | head -500'
 
 	else
 	        fzf -m --preview '[[ $(file --mime {}) =~ binary ]] &&
-	                         echo {} is a binary file ||
-	                         (bat --style=numbers --color=always {} ||
-	                          highlight -O ansi -l {} ||
-	                          coderay {} ||
-	                          rougify {} ||
-	                          cat {}) 2> /dev/null | head -500'
+	                        echo {} is a binary file ||
+	                        (bat --style=numbers --color=always {} ||
+	                        highlight -O ansi -l {} ||
+	                        coderay {} ||
+	                        rougify {} ||
+	                        cat {}) 2> /dev/null | head -500'
 	fi
 }
 
