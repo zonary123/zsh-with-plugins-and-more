@@ -16,7 +16,7 @@ then
     wget https://wallpaperaccess.com/full/3177905.jpg ~/.wallpapers/anime
     wget https://wallpapercave.com/wp/wp5420118.jpg ~/.wallpapers/anime
     wget https://www.nawpic.com/media/2020/naruto-4k-nawpic.png ~/.wallpapers/anime
-    wget ~/.wallpapers/anime
+    wget https://images.wallpapersden.com/image/download/k-da-the-baddest-akali_bGhpbmiUmZqaraWkpJRmbmdlrWZlbWU.jpg ~/.wallpapers/anime
     wget ~/.wallpapers/anime
     wget ~/.wallpapers/anime
     clear

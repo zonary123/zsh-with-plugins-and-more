@@ -77,8 +77,8 @@ sudo rm ~/git/clone/zsh-with-plugins-and-more/lsd_0.21.0_amd64.deb
 sudo rm ~/git/clone/zsh-with-plugins-and-more/bat_0.19.0_amd64.deb
 #Instalacion de colores de lsd
 sudo chmod -R +x /usr/share/lsd
-mkdir /usr/share/lsd
-cp ~/git/clone/zsh-with-plugins-and-more/config/ls_colors/ls_colors.sh /usr/share/lsd
+sudo mkdir -p /usr/share/lsd
+sudo cp ~/git/clone/zsh-with-plugins-and-more/config/lsd/ls_colors.sh /usr/share/lsd
 clear
 
 #Comandos Git clone
@@ -109,6 +109,10 @@ echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Cambio de terminal a los perfil
 sudo usermod --shell /usr/bin/zsh $USER
 sudo usermod --shell /usr/bin/zsh root
 clear
+
+#Instalacion theme rofi
+git clone https://github.com/dracula/rofi
+cp rofi/theme/config1.rasi ~/.config/rofi/config.rasi
 
 #Instalacion de fzf
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de fzf"

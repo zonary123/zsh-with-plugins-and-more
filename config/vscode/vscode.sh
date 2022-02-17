@@ -15,7 +15,7 @@ code --install-extension hookyqr.beautify
 code --install-extension christian-kohler.path-intellisense
 code --install-extension ionutvmi.path-autocomplete
 code --install-extension mhutchie.git-graph
-code --install-extension Shan.code-settings-sync
+#code --install-extension Shan.code-settings-sync
 
 #====================================================#
 #                       Colors                       #
@@ -27,7 +27,7 @@ code --install-extension naumovs.color-highlight
 #                       bash                         #
 #====================================================#
 read -p "Desea extensiones para bash para scripts si/no" bash
-if (( "si" == "$bash" ))
+if [[ "si" == "$bash" ]]
 then
     code --install-extension designbyajay.bash-cli-snippets
 fi
@@ -36,7 +36,7 @@ fi
 #                       ssh                          #
 #====================================================#
 read -p "Desea extensiones para ssh si/no" ssh
-if (( "si" == "$ssh" ))
+if [[ "si" == "$ssh" ]]
 then
     code --install-extension ms-vscode-remote.remote-ssh
 fi
@@ -45,7 +45,7 @@ fi
 #                       HTML                         #
 #====================================================#
 read -p "Desea extensiones para HTML si/no" html
-if (( "si" == "$html" ))
+if [[ "si" == "$html" ]]
 then
     code --install-extension hwencc.html-tag-wrapper
     code --install-extension bradlc.vscode-tailwindcss
@@ -55,7 +55,7 @@ fi
 #                       CSS                          #
 #====================================================#
 read -p "Desea extensiones para CSS si/no" css
-if (( "si" == "$css" ))
+if [[ "si" == "$css" ]]
 then
     code --install-extension pranaygp.vscode-css-peek
     code --install-extension zignd.html-css-class-completion
@@ -66,7 +66,7 @@ fi
 #                       JS                           #
 #====================================================#
 read -p "Desea extensiones para JS si/no" js
-if (( "si" == "$js" ))
+if [[ "si" == "$js" ]]
 then
     code --install-extension xabikos.javascriptsnippets
 fi
@@ -75,7 +75,7 @@ fi
 #                       CSV                          #
 #====================================================#
 read -p "Desea extensiones para csv si/no" csv
-if (( "si" == "$csv" ))
+if [[ "si" == "$csv" ]]
 then
     code --install-extension mechatroner.rainbow-csv
 fi
@@ -84,7 +84,7 @@ fi
 #                       React                        #
 #====================================================#
 read -p "Desea extensiones para REACT si/no" react
-if (( "si" == "$react" ))
+if [[ "si" == "$react" ]]
 then
     code --install-extension xabikos.ReactSnippets
 fi
@@ -100,7 +100,7 @@ code --install-extension pkief.material-icon-theme
 code --install-extension whizkydee.material-palenight-theme
 code --install-extension unthrottled.doki-theme
 read -p "Desea instalar mas themas" Themes
-if (( "si" == "$Themes" ))
+if [[ "si" == "$Themes" ]]
 then
     code --install-extension monokai.theme-monokai-pro-vscode
     code --install-extension pawelgrzybek.gatito-theme
