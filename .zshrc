@@ -98,6 +98,8 @@ source /usr/share/plugins-zsh/nmap.plugin.zsh
 #LSD colors comand ls
 source /usr/share/lsd/ls_colors.sh
 
+#export LS_COLORS="$(vivid generate snazzy)"
+
 # Functions
 function mkt(){
 	mkdir {nmap,content,exploits,scripts}

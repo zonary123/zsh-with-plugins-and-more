@@ -71,6 +71,8 @@ echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de bat lsd y descar
 wget https://github.com/sharkdp/bat/releases/download/v0.19.0/bat_0.19.0_amd64.deb
 wget https://github.com/Peltoche/lsd/releases/download/0.21.0/lsd_0.21.0_amd64.deb
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip 
+wget https://github.com/sharkdp/vivid/releases/download/v0.8.0/vivid_0.8.0_amd64.deb
+sudo dpkg -i vivid_0.8.0_amd64.deb
 sudo dpkg -i ~/git/clone/zsh-with-plugins-and-more/lsd_0.21.0_amd64.deb
 sudo dpkg -i ~/git/clone/zsh-with-plugins-and-more/bat_0.19.0_amd64.deb
 sudo rm ~/git/clone/zsh-with-plugins-and-more/lsd_0.21.0_amd64.deb

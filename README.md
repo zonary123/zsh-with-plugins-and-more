@@ -29,6 +29,7 @@ lsd
 - [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 - [fzf](https://github.com/junegunn/fzf)
 - [lsd](https://github.com/Peltoche/lsd)
+- [LS_COlors](https://github.com/sharkdp/vivid)
 - [bat](https://github.com/sharkdp/bat)
 ## Tipografia
 La tipografia se instala sola pero tienes que cambiarla manualmente en la terminal.Esto es para poder ver los iconos y las demas cosas y que no veas una terminal con simbolos raros.
