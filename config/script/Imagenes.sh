@@ -1,7 +1,8 @@
 #!/bin/bash
-mkdir ~/.wallappers/anime
-mkdir ~/.wallappers/coches
-mkdir ~/.wallappers/wallpapers
+sudo chmod -R 777 ~/.wallpapers
+mkdir -p ~/.wallappers/anime
+mkdir -p ~/.wallappers/coches
+mkdir -p ~/.wallappers/wallpapers
 #====================================================#
 #                       Anime                        #
 #====================================================#
@@ -9,6 +10,8 @@ read -p "Desea instalar imagenes de fondo de anime" anime
 
 if [[ $anime == "anime"  ]]    # ← see 'man bash' for valid conditional statements.
 then
+    clear
+    echo -e "${azul}Descarga de imagenes de anime."
     wget https://i.pinimg.com/originals/27/e4/16/27e4160b0e3d0b90cbcf6aee8e133951.jpg ~/.wallpapers/anime
     wget https://images.hdqwalls.com/download/anime-cyber-arm-sword-girl-4k-61-1920x1080.jpg ~/.wallpapers/anime
     wget https://images.wallpapersden.com/image/download/school-anime-girl_a25maGaUmZqaraWkpJRmbmdlrWZlbWU.jpg ~/.wallpapers/anime
@@ -29,6 +32,8 @@ read -p "Desea instalar imagenes de fondo de Coches" coches
 
 if [[ $coches == "coches"  ]]    # ← see 'man bash' for valid conditional statements.
 then
+    clear
+    echo -e "${azul}Descarga de imagenes de coches"
     wget ~/.wallpapers/coches
     wget ~/.wallpapers/coches
     clear
@@ -39,6 +44,8 @@ fi
 read -p "Desea instalar wallpapers de fondo de pantalla" wallpapers
 if [[ $wallpapers == "wallpapers" ]]    # ← see 'man bash' for valid conditional statements.
 then
+    clear
+    echo -e "${azul}Descarga de wallpapers"
     wget https://images5.alphacoders.com/958/thumb-1920-958580.jpg ~/.wallpapers/wallapapers
     wget https://p4.wallpaperbetter.com/wallpaper/468/838/392/4k-artistic-5k-colors-wallpaper-thumb.jpg ~/.wallpapers/wallapapers
     wget https://images4.alphacoders.com/932/thumb-1920-932271.jpg ~/.wallpapers/wallapapers
@@ -77,5 +84,7 @@ fi
 
 if [[  =~  ]]    # ← see 'man bash' for valid conditional statements.
 then
-    
+    clear
+    echo "Descarga de wallpapers"
 fi
+sudo chmod -R 766 ~/.wallpapers

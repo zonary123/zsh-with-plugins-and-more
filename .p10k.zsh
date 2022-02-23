@@ -178,6 +178,11 @@
 
   # Separator between same-color segments on the left.
   typeset -g POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR='%244F\u2571'
+  
+  #typeset -g POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR='%245F\ue0c8 '
+  #Separadores de llama arriba y abajo de este comentario
+  #typeset -g POWERLEVEL9K_RIGHT_SUBSEGMENT_SEPARATOR='%244F\ue0ca '
+  
   # Separator between same-color segments on the right.
   typeset -g POWERLEVEL9K_RIGHT_SUBSEGMENT_SEPARATOR='%244F\u2571'
   # Separator between different-color segments on the left.
