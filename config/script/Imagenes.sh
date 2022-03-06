@@ -20,7 +20,7 @@ then
     wget https://wallpapercave.com/wp/wp5420118.jpg ~/.wallpapers/anime
     wget https://www.nawpic.com/media/2020/naruto-4k-nawpic.png ~/.wallpapers/anime
     wget https://images.wallpapersden.com/image/download/k-da-the-baddest-akali_bGhpbmiUmZqaraWkpJRmbmdlrWZlbWU.jpg ~/.wallpapers/anime
-    wget ~/.wallpapers/anime
+    wget https://en.free-wallpapers.su/data/media/3/big/anm7904.jpg ~/.wallpapers/anime
     wget ~/.wallpapers/anime
     clear
 fi
