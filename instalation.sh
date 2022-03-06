@@ -188,9 +188,11 @@ echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar imagenes de fond
 read wallpapers
 if [ "$wallpapers" == "si" ]
 then
-    ~/config/script/imagenes.sh
+    sudo chmod 777 ~/git/clone/zsh-with-plugins-and-more/config/script/imagenes.sh
+    ~/git/clone/zsh-with-plugins-and-more/config/script/Imagenes.sh
     clear
 fi
+cd ~/git/clone/zsh-with-plugins-and-more
 echo -e "${amarillo}[${rojo}*${amarillo}]${verde} La instalacion fue hecha satisfactoriamente"
 if [ "$respuesta" == "no" ]
 then
