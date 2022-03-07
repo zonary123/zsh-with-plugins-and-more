@@ -23,10 +23,10 @@ blanco="\e[0;31m"
 #========================================#
 usuario=$USERNAME
 directorio=$PWD
-chown $usuario:$usuario -R $directorio
+
 
 clear
-sudo chmod 766 -R $directorio/config
+sudo chmod 766 -R ~/git/clone/zsh-with-plugins-and-more/config
 sudo chmod -R 766 config
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes "
 sudo apt update && sudo apt upgrade 
@@ -44,26 +44,26 @@ sudo apt update && sudo apt upgrade
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Ejecucion del main.py de yorkox0/autoBspwm"
-cd $directorio/autoBspwm
-python3 $directorio/autoBspwm/main.py
+cd ~/git/clone/zsh-with-plugins-and-more/autoBspwm
+python3 ~/git/clone/zsh-with-plugins-and-more/autoBspwm/main.py
 cd ~/git/clone/zsh-with-plugins-and-more
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Copiando archivos de configuracion para polybar bspwm sxhkd picom"
 git clone --depth=1 https://github.com/adi1090x/polybar-themes.git 
-sudo chmod +x $directorio/polybar-themes/setup.sh
-$directorio/polybar-themes/setup.sh
+sudo chmod +x ~/git/clone/zsh-with-plugins-and-more/polybar-themes/setup.sh
+~/git/clone/zsh-with-plugins-and-more/polybar-themes/setup.sh
 
-sudo cp -fr $directorio/config/bspwm ~/.config
-sudo cp -fr $directorio/config/sxhkd ~/.config
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/bspwm ~/.config
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/sxhkd ~/.config
 sudo rm -r ~/.wallpapers/wallpaper.jpg
 sudo rm -r ~/.config/polybar/shapes
-sudo cp -fr $directorio/config/.wallpapers ~/
-sudo cp -fr $directorio/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/.wallpapers ~/
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
 
 #Picom
 sudo mkdir ~/.config/picom
-sudo cp -fr $directorio/config/picom ~/.config
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/picom ~/.config
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
@@ -85,30 +85,30 @@ sudo rm ./vivid_0.8.0_amd64.deb
 #Instalacion de colores de lsd
 sudo chmod -R +x /usr/share/lsd
 sudo mkdir -p /usr/share/lsd
-sudo cp $directorio/config/lsd/ls_colors.sh /usr/share/lsd
+sudo cp ~/git/clone/zsh-with-plugins-and-more/config/lsd/ls_colors.sh /usr/share/lsd
 clear
 
 #Comandos Git clone
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Clonacion de repositorios github powerlevel10k | plugins de zsh => zsh-autosuggestions y zsh-syntax-highlighting "
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
-git clone https://github.com/zsh-users/zsh-autosuggestions $directorio/plugins-zsh/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting $directorio/plugins-zsh/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/git/clone/zsh-with-plugins-and-more/plugins-zsh/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/git/clone/zsh-with-plugins-and-more/plugins-zsh/zsh-syntax-highlighting
 
 #Instalacion de la tipografia Hack nerd Fonts
-sudo mv $directorio/Hack.zip /usr/share/fonts
+sudo mv ~/git/clone/zsh-with-plugins-and-more/Hack.zip /usr/share/fonts
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Moviendo archivos .p10k.zsh y .zshrc al directorio personal del usuario directorio de root y a al directorio /etc/skel"
 sudo mkdir /usr/share/zsh-p10k 
-sudo cp -fr $directorio/powerlevel10k /usr/share/zsh-p10k
-sudo cp -fr $directorio/{.p10k.zsh,.zshrc} /etc/skel
-sudo cp -fr $directorio/{.p10k.zsh,.zshrc} ~
-sudo cp -fr $directorio/{.p10k.zsh,.zshrc} /root
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/powerlevel10k /usr/share/zsh-p10k
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/{.p10k.zsh,.zshrc} /etc/skel
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/{.p10k.zsh,.zshrc} ~
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/{.p10k.zsh,.zshrc} /root
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de los plugins"
 #Plugins ZSH
-sudo cp -fr $directorio/plugins-zsh /usr/share
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/plugins-zsh /usr/share
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Cambio de terminal a los perfiles $USER y root"
@@ -132,20 +132,20 @@ sudo cp -fr ~/.fzf /root
 sudo ln -sf ~/.zshrc /root/.zshrc
 sudo ln -sf ~/.p10k.zsh /root/.p10k.zsh
 sudo chmod -R 777 ~/.config/polybar
-sudo cp -fr $directorio/config/sxhkd ~/.config
-sudo cp -fr $directorio/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
-sudo cp -fr $directorio/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/sxhkd ~/.config
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
+sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes ~/.config/polybar
 sudo chmod -R 777 ~/.config/polybar
 #/etc/skel
 sudo cp -fr ~/.fzf /etc/skel
 sudo cp -fr ~/.config /etc/skel
 clear
-sudo chmod 766 -R $directorio/config
+sudo chmod 766 -R ~/git/clone/zsh-with-plugins-and-more/config
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Configuracion del zsh a partir de unas configuraciones determinadas"
 read -rp "Quieres una configuracion determinada si/no" respuesta
 if [[ "$respuesta" == "si" ]]
 then
-    $directorio/Themes.sh
+    ~/git/clone/zsh-with-plugins-and-more/Themes.sh
 else
     p10k configure
 fi
@@ -161,7 +161,7 @@ if [[ "$code" == "si" ]]
 then
     sudo chmod -R 777 ./config/script
     sudo mkdir ~/scripts
-    sudo cp $directorio/config/script/snap.sh ~/scripts
+    sudo cp ~/git/clone/zsh-with-plugins-and-more/config/script/snap.sh ~/scripts
     sudo chmod 777 /etc/crontab
     sudo chmod +x /home/$USER/scripts/snap.sh
     sudo /home/$USER/scripts/snap.sh
@@ -174,9 +174,9 @@ then
     sudo chmod 644 /etc/crontab
     sudo systemctl restart snapd.service
     sudo snap install --classic code
-    sudo $directorio/config/script/snap.sh
+    sudo ~/git/clone/zsh-with-plugins-and-more/config/script/snap.sh
     code .
-    $directorio/config/vscode/vscode.sh
+    ~/git/clone/zsh-with-plugins-and-more/config/vscode/vscode.sh
     clear
 fi
 clear
@@ -194,8 +194,8 @@ echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar imagenes de fond
 read wallpapers
 if [[ "$wallpapers" == "si" ]]
 then
-    sudo chmod 777 $directorio/config/script/imagenes.sh
-    $directorio/config/script/Imagenes.sh
+    sudo chmod 777 ~/git/clone/zsh-with-plugins-and-more/config/script/imagenes.sh
+    ~/git/clone/zsh-with-plugins-and-more/config/script/Imagenes.sh
     sudo chmod -R 755 ~/.wallpapers
     clear
 fi
@@ -204,8 +204,8 @@ echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Servicios de ser
 read Servicios
 if [[ "$Servicios" == "si" ]]
 then
-    sudo chmod 777 $directorio/installs/services.sh
-    $directorio/installs/services.sh
+    sudo chmod 777 ~/git/clone/zsh-with-plugins-and-more/installs/services.sh
+    ~/git/clone/zsh-with-plugins-and-more/installs/services.sh
     clear
 fi
 
