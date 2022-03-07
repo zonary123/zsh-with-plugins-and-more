@@ -23,11 +23,11 @@ blanco="\e[0;31m"
 #========================================#
 usuario=$USERNAME
 directorio=$PWD
-chown $usuario:$usuario -R $directorio
+chown $USER:$USER -R $directorio
 
 clear
-sudo chmod 766 -R $directorio/config
-sudo chmod -R 766 config
+sudo chmod 777 -R $directorio/config
+sudo chmod -R 755 $directorio
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes "
 sudo apt update && sudo apt upgrade 
 sudo apt install libev-dev screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev -y
