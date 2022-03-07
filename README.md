@@ -4,13 +4,8 @@ Los archivos de zsh y los plugins de zsh se envian a una carpeta en el directori
 
 Tambien se instalara unas tipografias para la terminal. Tendras que cambiar la tipografia de la terminal a hack nerd fonts
 ## Install
-En el archivo instalation.sh de zsh-with-plugins-and-more cambiar el nombre carlos por el nombre del usuario a instalr en todos los comandos
 ```ini
-  mkdir ~/git
-  mkdir ~/git/clone
-  cd ~/git/clone
   git clone https://github.com/zonary123/zsh-with-plugins-and-more
-  cd ~/git/clone/zsh-with-plugins-and-more
   ./instalation.sh
 ```
 ## Instalacion al terminar
@@ -25,6 +20,7 @@ lsd
 ## Inslatacion de bspwm sxhkd automatico
 - [config de s4vitar](https://github.com/yorkox0/autoBspwm)
 - [polybar-themes](https://github.com/adi1090x/polybar-themes)
+- [vivid](https://github.com/sharkdp/vivid/tree/master/themes)
 ## Links de cada cosa.
 - [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 - [fzf](https://github.com/junegunn/fzf)
