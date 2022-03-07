@@ -44,31 +44,56 @@ fi
 #====================================================#
 #                       HTML                         #
 #====================================================#
-read -p "Desea extensiones para HTML si/no" html
-if [[ "si" == "$html" ]]
-then
-    code --install-extension hwencc.html-tag-wrapper
-    code --install-extension bradlc.vscode-tailwindcss
-fi
+#read -p "Desea extensiones para HTML si/no" html
+#if [[ "si" == "$html" ]]
+#then
+#    code --install-extension hwencc.html-tag-wrapper
+#    code --install-extension bradlc.vscode-tailwindcss
+#fi
 
 #====================================================#
 #                       CSS                          #
 #====================================================#
-read -p "Desea extensiones para CSS si/no" css
-if [[ "si" == "$css" ]]
-then
-    code --install-extension pranaygp.vscode-css-peek
-    code --install-extension zignd.html-css-class-completion
-    code --install-extension ecmel.vscode-html-css
-fi
+#read -p "Desea extensiones para CSS si/no" css
+#if [[ "si" == "$css" ]]
+#then
+#    code --install-extension pranaygp.vscode-css-peek
+#    code --install-extension zignd.html-css-class-completion
+#    code --install-extension ecmel.vscode-html-css
+#fi
 
 #====================================================#
 #                       JS                           #
 #====================================================#
-read -p "Desea extensiones para JS si/no" js
-if [[ "si" == "$js" ]]
+#read -p "Desea extensiones para JS si/no" js
+#if [[ "si" == "$js" ]]
+#then
+#    code --install-extension xabikos.javascriptsnippets
+#fi
+
+
+#====================================================#
+#                       React                        #
+#====================================================#
+#read -p "Desea extensiones para REACT si/no" react
+#if [[ "si" == "$react" ]]
+#then
+#    code --install-extension xabikos.ReactSnippets
+#fi
+
+#====================================================#
+#                       Pàginas                      #
+#====================================================#
+read -p "Desea extensiones para Paginas web si/no" paginas
+if [[ "si" == "$paginas" ]]
 then
     code --install-extension xabikos.javascriptsnippets
+    code --install-extension xabikos.ReactSnippets
+    code --install-extension pranaygp.vscode-css-peek
+    code --install-extension zignd.html-css-class-completion
+    code --install-extension ecmel.vscode-html-css
+    code --install-extension hwencc.html-tag-wrapper
+    code --install-extension bradlc.vscode-tailwindcss
 fi
 
 #====================================================#
@@ -78,15 +103,6 @@ read -p "Desea extensiones para csv si/no" csv
 if [[ "si" == "$csv" ]]
 then
     code --install-extension mechatroner.rainbow-csv
-fi
-
-#====================================================#
-#                       React                        #
-#====================================================#
-read -p "Desea extensiones para REACT si/no" react
-if [[ "si" == "$react" ]]
-then
-    code --install-extension xabikos.ReactSnippets
 fi
 
 #====================================================#
