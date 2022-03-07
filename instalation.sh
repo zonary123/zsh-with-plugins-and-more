@@ -203,16 +203,21 @@ then
     ~/git/clone/zsh-with-plugins-and-more/installs/services.sh
     clear
 fi
-cd ~/git/clone/zsh-with-plugins-and-more
-echo -e "${amarillo}[${rojo}*${amarillo}]${verde} La instalacion fue hecha satisfactoriamente"
-if [[ "$respuesta" == "no" ]]
-then
-    zsh
-    p10k configure
-fi
+
+#cd ~/git/clone/zsh-with-plugins-and-more
+#echo -e "${amarillo}[${rojo}*${amarillo}]${verde} La instalacion fue hecha satisfactoriamente"
+#if [[ "$respuesta" == "no" ]]
+#then
+#    zsh
+#    p10k configure
+#fi
 
 
 #========================================#
 #               VIEW                     #
 #========================================#
 #https://github.com/ryanoasis/powerline-extra-symbols
+#========================================#
+#              FINISH                    #
+#========================================#
+reboot
