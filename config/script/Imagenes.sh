@@ -1,8 +1,9 @@
 #!/bin/bash
-sudo chmod -R 777 ~/.wallpapers
+sudo chmod -R 766 ~/.wallpapers
 mkdir -p ~/.wallpapers/anime
 mkdir -p ~/.wallpapers/coches
 mkdir -p ~/.wallpapers/wallpapers
+sudo chmod -R 766 ~/.wallpapers
 #====================================================#
 #                       Anime                        #
 #====================================================#
@@ -22,6 +23,7 @@ mkdir -p ~/.wallpapers/wallpapers
     wget https://www.nawpic.com/media/2020/naruto-4k-nawpic.png ~/.wallpapers/anime
     wget https://images.wallpapersden.com/image/download/k-da-the-baddest-akali_bGhpbmiUmZqaraWkpJRmbmdlrWZlbWU.jpg ~/.wallpapers/anime
     wget https://en.free-wallpapers.su/data/media/3/big/anm7904.jpg ~/.wallpapers/anime
+    mv anm7904.jpg 1.jpg
     wget ~/.wallpapers/anime
     clear
 #fi

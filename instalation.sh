@@ -23,7 +23,8 @@ blanco="\e[0;31m"
 #========================================#
 usuario=$USERNAME
 clear
-sudo chmod -R 777 config
+sudo chmod 766 -R ~/git/clone/zsh-with-plugins-and-more/config
+sudo chmod -R 766 config
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes "
 sudo apt update && sudo apt upgrade 
 sudo apt install libev-dev screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
@@ -135,7 +136,7 @@ sudo chmod -R 777 ~/.config/polybar
 sudo cp -fr ~/.fzf /etc/skel
 sudo cp -fr ~/.config /etc/skel
 clear
-
+sudo chmod 766 -R ~/git/clone/zsh-with-plugins-and-more/config
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Configuracion del zsh a partir de unas configuraciones determinadas"
 read -rp "Quieres una configuracion determinada si/no" respuesta
 if [ "$respuesta" == "si" ]
