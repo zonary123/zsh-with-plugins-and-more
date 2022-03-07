@@ -192,6 +192,7 @@ if [[ "$wallpapers" == "si" ]]
 then
     sudo chmod 777 ~/git/clone/zsh-with-plugins-and-more/config/script/imagenes.sh
     ~/git/clone/zsh-with-plugins-and-more/config/script/Imagenes.sh
+    sudo chmod -R 755 ~/.wallpapers
     clear
 fi
 clear
