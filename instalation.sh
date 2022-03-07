@@ -35,12 +35,12 @@ sudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb
 sudo apt install libuv1-dev libev -y
 sudo apt install polybar -y 
 sudo apt install slim libpam0g-dev libxrandr-dev libfreetype6-dev libimlib2-dev libxft-dev -y
-sudo apt update && sudo apt upgrade 
+sudo apt update -y && sudo apt upgrade -y 
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Git clone del repositorio de yorkox0/autoBspwm"
 git clone https://github.com/yorkox0/autoBspwm
-sudo apt update && sudo apt upgrade
+sudo apt update -y && sudo apt upgrade -y 
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Ejecucion del main.py de yorkox0/autoBspwm"
