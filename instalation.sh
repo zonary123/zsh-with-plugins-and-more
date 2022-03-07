@@ -170,9 +170,9 @@ then
     sudo chmod 644 /etc/crontab
     sudo systemctl restart snapd.service
     sudo snap install --classic code
+    sudo ~/git/clone/zsh-with-plugins-and-more/config/script/snap.sh
     code .
     ~/git/clone/zsh-with-plugins-and-more/config/vscode/vscode.sh
-    ~/git/clone/zsh-with-plugins-and-more/config/script/snap.sh
     clear
 fi
 clear

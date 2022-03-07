@@ -112,6 +112,10 @@ read
 if [[ "$rainglow" == "si" ]]
 then
     code --install-extension daylerees.rainglow
+    clear
+    echo "Instalacion de extensiones terminada"
 else
+    clear
     echo "Instalacion de extensiones terminada"
 fi
+
