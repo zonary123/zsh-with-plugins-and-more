@@ -27,11 +27,11 @@ sudo chmod 766 -R ~/git/clone/zsh-with-plugins-and-more/config
 sudo chmod -R 766 config
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes "
 sudo apt update && sudo apt upgrade 
-sudo apt install libev-dev screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
-sudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xsudo rm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsonsudo cpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-dev
-sudo apt install libuv1-dev libev
-sudo apt install polybar
-sudo apt install slim libpam0g-dev libxrandr-dev libfreetype6-dev libimlib2-dev libxft-dev
+sudo apt install libev-dev screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev -y
+sudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xsudo rm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsonsudo cpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-dev -y
+sudo apt install libuv1-dev libev -y
+sudo apt install polybar -y 
+sudo apt install slim libpam0g-dev libxrandr-dev libfreetype6-dev libimlib2-dev libxft-dev -y
 sudo apt update && sudo apt upgrade 
 clear
 
@@ -64,7 +64,7 @@ sudo cp -fr ~/git/clone/zsh-with-plugins-and-more/config/picom ~/.config
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
-sudo apt install zsh ranger xclip snapd tree pip
+sudo apt install zsh ranger xclip snapd tree pip htop -y
 clear
 
 #Comandos wget
@@ -139,7 +139,7 @@ clear
 sudo chmod 766 -R ~/git/clone/zsh-with-plugins-and-more/config
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Configuracion del zsh a partir de unas configuraciones determinadas"
 read -rp "Quieres una configuracion determinada si/no" respuesta
-if [ "$respuesta" == "si" ]
+if [[ "$respuesta" == "si" ]]
 then
     ~/git/clone/zsh-with-plugins-and-more/Themes.sh
 else
@@ -179,7 +179,7 @@ clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar gitkraken"
 read gitkraken
-if [ "$gitkraken" == "si" ]
+if [[ "$gitkraken" == "si" ]]
 then
     wget https://www.gitkraken.com/download/linux-deb
     sudo dpkg -i ./gitkraken-amd64.deb
@@ -188,15 +188,24 @@ fi
 clear
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar imagenes de fondo de pantalla"
 read wallpapers
-if [ "$wallpapers" == "si" ]
+if [[ "$wallpapers" == "si" ]]
 then
     sudo chmod 777 ~/git/clone/zsh-with-plugins-and-more/config/script/imagenes.sh
     ~/git/clone/zsh-with-plugins-and-more/config/script/Imagenes.sh
     clear
 fi
+clear
+echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Servicios de servidor"
+read Servicios
+if [[ "$Servicios" == "si" ]]
+then
+    sudo chmod 777 ~/git/clone/zsh-with-plugins-and-more/installs/services.sh
+    ~/git/clone/zsh-with-plugins-and-more/installs/services.sh
+    clear
+fi
 cd ~/git/clone/zsh-with-plugins-and-more
 echo -e "${amarillo}[${rojo}*${amarillo}]${verde} La instalacion fue hecha satisfactoriamente"
-if [ "$respuesta" == "no" ]
+if [[ "$respuesta" == "no" ]]
 then
     zsh
     p10k configure
