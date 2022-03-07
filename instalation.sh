@@ -160,6 +160,7 @@ then
     sudo cp ~/git/clone/zsh-with-plugins-and-more/config/script/snap.sh ~/scripts
     sudo chmod 777 /etc/crontab
     sudo chmod +x /home/$USER/scripts/snap.sh
+    sudo /home/$USER/scripts/snap.sh
     if [[ "@reboot root $HOME/scripts/snap.sh" == $(sudo cat /etc/crontab | grep "@reboot root $HOME/scripts/snap.sh") ]]
     then
         echo "Ya esta escrito en crontab"
