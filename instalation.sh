@@ -213,7 +213,7 @@ fi
 #    p10k configure
 #fi
 
-
+sudo chown -R root:root /usr/local/share/zsh/site-functions
 #========================================#
 #               VIEW                     #
 #========================================#
