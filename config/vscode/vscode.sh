@@ -1,7 +1,7 @@
 #!/bin/bash
 systemctl start snapd.service
 snap install --classic code
-sudo cp -rf ~/git/clone/zsh-with-plugins-and-more/config/vscode/settings.json $HOME/.config/Code/User
+sudo cp -rf $directorio/config/vscode/settings.json $HOME/.config/Code/User
 #====================================================#
 #                       Upgrades                     #
 #====================================================#
@@ -22,7 +22,7 @@ code --install-extension mhutchie.git-graph
 #====================================================#
 code --install-extension oderwat.indent-rainbow
 code --install-extension naumovs.color-highlight
-
+clear
 #====================================================#
 #                       bash                         #
 #====================================================#
@@ -30,6 +30,7 @@ read -p "Desea extensiones para bash para scripts si/no" bash
 if [[ "si" == "$bash" ]]
 then
     code --install-extension designbyajay.bash-cli-snippets
+    clear
 fi
 
 #====================================================#
@@ -39,6 +40,7 @@ read -p "Desea extensiones para ssh si/no" ssh
 if [[ "si" == "$ssh" ]]
 then
     code --install-extension ms-vscode-remote.remote-ssh
+    clear
 fi
 
 #====================================================#
@@ -94,6 +96,7 @@ then
     code --install-extension ecmel.vscode-html-css
     code --install-extension hwencc.html-tag-wrapper
     code --install-extension bradlc.vscode-tailwindcss
+    clear
 fi
 
 #====================================================#
@@ -103,6 +106,7 @@ read -p "Desea extensiones para csv si/no" csv
 if [[ "si" == "$csv" ]]
 then
     code --install-extension mechatroner.rainbow-csv
+    clear
 fi
 
 #====================================================#
@@ -115,11 +119,13 @@ code --install-extension pkief.material-icon-theme
 #====================================================#
 code --install-extension whizkydee.material-palenight-theme
 code --install-extension unthrottled.doki-theme
+clear
 read -p "Desea instalar mas themas" Themes
 if [[ "si" == "$Themes" ]]
 then
     code --install-extension monokai.theme-monokai-pro-vscode
     code --install-extension pawelgrzybek.gatito-theme
+    clear
 fi
 
 clear

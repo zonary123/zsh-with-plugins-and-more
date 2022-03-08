@@ -22,7 +22,7 @@ blanco="\e[0;31m"
 #                Start                   #
 #========================================#
 usuario=$USERNAME
-directorio=$PWD
+export directorio=$PWD
 chown $USER:$USER -R $directorio
 
 read -p "Quieres una actualizacion a full: " full
@@ -77,7 +77,7 @@ clear
 
 #Comandos wget
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de bat lsd y descarga de la fuente de hack nerd fonts"
-sudo wget https://github.com/sharkdp/bat/releases/download/v0.19.0/bat_0.19.0_amd64.deb
+sudo wget https://github.com/sharkdp/bat/releases/download/v0.20.0/bat_0.20.0_amd64.deb
 sudo wget https://github.com/Peltoche/lsd/releases/download/0.21.0/lsd_0.21.0_amd64.deb
 sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip 
 sudo wget https://github.com/sharkdp/vivid/releases/download/v0.8.0/vivid_0.8.0_amd64.deb
@@ -95,7 +95,8 @@ clear
 
 #Comandos Git clone
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Clonacion de repositorios github powerlevel10k | plugins de zsh => zsh-autosuggestions y zsh-syntax-highlighting "
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
+cd $directorio
+git clone https://github.com/romkatv/powerlevel10k.git $directorio
 git clone https://github.com/zsh-users/zsh-autosuggestions $directorio/plugins-zsh/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting $directorio/plugins-zsh/zsh-syntax-highlighting
 
