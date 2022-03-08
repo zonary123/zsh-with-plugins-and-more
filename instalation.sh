@@ -25,16 +25,21 @@ usuario=$USERNAME
 directorio=$PWD
 chown $USER:$USER -R $directorio
 
+read -p "Quieres una actualizacion a full: " full
+if [[ "$full" == "si" ]]    # ← see 'man bash' for valid conditional statements.
+then
+    sudo apt full-upgrade
+else
+    clear
+fi
+
 clear
 sudo chmod 777 -R $directorio/config
 sudo chmod -R 755 $directorio
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes "
 sudo apt update && sudo apt upgrade 
 sudo apt install libev-dev screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev -y
-sudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xsudo rm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsonsudo cpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-dev -y
-sudo apt install libuv1-dev libev -y
-sudo apt install polybar -y 
-sudo apt install slim libpam0g-dev libxrandr-dev libfreetype6-dev libimlib2-dev libxft-dev -y
+sudo apt install libuv1-dev libev polybar slim libpam0g-dev libxrandr-dev libfreetype6-dev libimlib2-dev libxft-dev cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xsudo rm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsonsudo cpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-dev -y
 sudo apt update -y && sudo apt upgrade -y 
 clear
 
@@ -142,7 +147,7 @@ sudo cp -fr ~/.config /etc/skel
 clear
 sudo chmod 766 -R $directorio/config
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Configuracion del zsh a partir de unas configuraciones determinadas"
-read -rp "Quieres una configuracion determinada si/no" respuesta
+read -rp "Quieres una configuracion determinada si/no: " respuesta
 if [[ "$respuesta" == "si" ]]
 then
     $directorio/Themes.sh
@@ -155,7 +160,7 @@ sudo apt update && sudo apt upgrade
 clear
 
 ##Instalacion de visual studio codes
-echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Visual studio code"
+echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Visual studio code: "
 read code
 if [[ "$code" == "si" ]]
 then
@@ -181,7 +186,7 @@ then
 fi
 clear
 
-echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar gitkraken"
+echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar gitkraken: "
 read gitkraken
 if [[ "$gitkraken" == "si" ]]
 then
@@ -190,7 +195,7 @@ then
     clear
 fi
 clear
-echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar imagenes de fondo de pantalla"
+echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar imagenes de fondo de pantalla: "
 read wallpapers
 if [[ "$wallpapers" == "si" ]]
 then
@@ -200,7 +205,7 @@ then
     clear
 fi
 clear
-echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Servicios de servidor"
+echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Servicios de servidor: "
 read Servicios
 if [[ "$Servicios" == "si" ]]
 then
