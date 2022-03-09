@@ -16,7 +16,7 @@
 #cafe="\e[0;33m"
 #amarillo="\e[1;33m"
 #gris="\e[0;37m"
-#blanco="\e[0;31m"
+export blanco="\e[1;37m"
 
 #========================================#
 #            Fzf-theme                   #

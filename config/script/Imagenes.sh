@@ -25,7 +25,18 @@ sudo chmod -R 766 ~/.wallpapers
     sudo wget https://images.wallpapersden.com/image/download/k-da-the-baddest-akali_bGhpbmiUmZqaraWkpJRmbmdlrWZlbWU.jpg ~/.wallpapers/anime
     sudo wget https://en.free-wallpapers.su/data/media/3/big/anm7904.jpg ~/.wallpapers/anime
     mv anm7904.jpg 1.jpg
-    sudo wget ~/.wallpapers/anime
+    sudo wget https://p4.wallpaperbetter.com/wallpaper/174/602/476/boruto-anime-hd-4k-wallpaper-preview.jpg
+    sudo wget https://www.xtrafondos.com/descargar.php?id=5426&resolucion=1920x1080
+    sudo wget https://swall.teahub.io/photos/small/179-1796688_4k-anime-wallpapers-for-pc.jpg
+    sudo wget https://w0.peakpx.com/wallpaper/1004/1019/HD-wallpaper-black-clover-anime-liebe-manga.jpg
+    sudo wget https://www.xtrafondos.com/wallpapers/nacht-black-clover-6847.jpg
+    sudo wget https://www.itl.cat/pngfile/big/324-3244836_cute-nero-black-clover.jpg
+    sudo wget https://www.teahub.io/photos/full/259-2599299_dark-anime-wallpaper-4k.jpg
+    sudo wget https://cdn.mwallpapers.com/photos/wallpapers/anime/cool-anime-android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4khd-wallpapers-desktop-background-android-iphone-1080p-4k-mercc.jpg
+    sudo wget https://i.pinimg.com/originals/d6/c6/28/d6c628096bc5ac1286a9b0815bbf6a06.jpg
+    sudo wget https://wallpaperaccess.com/full/108249.jpg
+    sudo wget
+    sudo wget
     clear
 #fi
 
@@ -39,8 +50,31 @@ sudo chmod -R 766 ~/.wallpapers
     clear
     cd ~/.wallpapers/coches
     echo -e "${azul}Descarga de imagenes de coches"
-    sudo wget ~/.wallpapers/coches
-    sudo wget ~/.wallpapers/coches
+    sudo wget https://images.hdqwalls.com/wallpapers/lamborghini-rider-anime-girl-4k-gj.jpg ~/.wallpapers/coches
+    sudo wget https://images.hdqwalls.com/wallpapers/anime-girl-lamborghini-aventador-sv-42.jpg ~/.wallpapers/coches
+    sudo wget https://www.teahub.io/photos/full/233-2335832_anime-girl-cars.jpg
+    sudo wget https://mocah.org/mocahbig/432744-Lamborghini-Veneno-long-hair-lights-city-building.jpg
+    sudo wget https://wallpaperaccess.com/full/1371822.jpg
+    sudo wget https://c4.wallpaperflare.com/wallpaper/804/990/325/anime-girls-police-cars-night-wang-xi-hd-wallpaper-preview.jpg
+    sudo wget https://wallpaperboat.com/wp-content/uploads/2020/04/anime-girl-with-car-wallpaper-1920x1080-1.jpg
+    sudo wget https://a-static.besthdwallpaper.com/racer-girl-wallpaper-3840x2160-75950_54.jpg
+    sudo wget https://images.hdqwalls.com/download/dark-knight-cyber-bike-anime-girl-4k-xa-1440x900.jpg
+    sudo wget https://i.pinimg.com/originals/56/b6/2f/56b62fa3615c1662ac4b2e2a81bb3b23.jpg
+    sudo wget https://wallup.net/wp-content/uploads/2018/09/26/181707-police-anime-anime_girls-bikini-eyepatches-gun-realistic-shotgun.jpg
+    sudo wget https://www.xtrafondos.com/en/descargar.php?id=5249&resolucion=3840x2160
+    sudo wget https://c4.wallpaperflare.com/wallpaper/589/95/715/seymour-science-fiction-anime-girls-motobike-punishing-gray-raven-hd-wallpaper-thumb.jpg
+    sudo wget https://images.hdqwalls.com/download/anime-girl-kawasaki-h2r-4k-kh-1440x900.jpg
+    sudo wget https://a-static.besthdwallpaper.com/ch-en-with-hoshiguma-swire-arknights-anime-video-game-wallpaper-2048x1536-73553_26.jpg
+    sudo wget https://www.xtrafondos.com/descargar.php?id=3725&resolucion=1920x1080
+    sudo wget https://a-static.besthdwallpaper.com/ch-en-di-sepeda-motor-arknights-video-game-anime-wallpaper-3554x1999-73634_53.jpg
+    sudo wget https://c4.wallpaperflare.com/wallpaper/240/935/656/anime-women-saber-alter-fate-series-wallpaper-preview.jpg
+    sudo wget https://cutewallpaper.org/25/anime-wallpaper-science/779825917.jpg
+    sudo wget https://wallpapercave.com/uwp/uwp1702129.jpeg
+    sudo wget https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-oC-9zUGv-WtM1W66XbP6cP0O209oxyUFfg&usqp=CAU
+    sudo wget https://images3.alphacoders.com/985/thumb-1920-985292.jpg
+    sudo wget https://www.pixel4k.com/wp-content/uploads/2020/10/anime-girl-in-lamborghini-blowing-bubble-gum-4k_1602437940.jpg
+    sudo wget
+    sudo wget
     clear
 #fi
 #====================================================#
@@ -77,9 +111,24 @@ sudo chmod -R 766 ~/.wallpapers
     sudo wget https://assets.hongkiat.com/uploads/minimalist-dekstop-wallpapers/4k/original/07.jpg ~/.wallpapers/wallpapers
     sudo wget https://c4.wallpaperflare.com/wallpaper/860/945/126/romantic-couple-4k-pics-ultra-hd-wallpaper-preview.jpg ~/.wallpapers/wallpapers
     sudo wget https://c4.wallpaperflare.com/wallpaper/184/515/626/digital-digital-art-artwork-illustration-drawing-hd-wallpaper-preview.jpg ~/.wallpapers/wallpapers
-    sudo wget ~/.wallpapers/wallpapers
-    sudo wget ~/.wallpapers/wallpapers
-    sudo wget ~/.wallpapers/wallpapers
+    sudo wget https://images.hdqwalls.com/wallpapers/anime-girl-i-am-back-4k-8g.jpg ~/.wallpapers/wallpapers
+    sudo wget http://hdqwalls.com/wallpapers/anime-girl-in-taxi-raining-4k-31.jpg ~/.wallpapers/wallpapers
+    sudo wget https://i.pinimg.com/originals/03/ab/30/03ab303a29c4b0078c6cacb2b70ebd20.png ~/.wallpapers/wallpapers
+    sudo wget https://images.hdqwalls.com/download/anime-girl-with-horn-7s-1920x1080.jpg
+    sudo wget https://fondosmil.com/fondo/13716.png
+    sudo wget https://fondosmil.com/fondo/13694.jpg
+    sudo wget https://www.xtrafondos.com/descargar.php?id=6345&resolucion=2560x1440
+    sudo wget https://fondosmil.com/fondo/13691.jpg
+    sudo wget https://cdn.ipadizate.com/2019/12/1540.png
+    sudo wget https://i0.wp.com/nerdizmo.uai.com.br/wp-content/uploads/sites/29/2020/06/Wallpaper-Minimalista-GEEKNESS-29.jpg?resize=950%2C606&ssl=1
+    sudo wget https://www.wallpapertip.com/wmimgs/3-37980_anime-minimalist-wallpaper-4k.jpg
+    sudo wget https://www.xtrafondos.com/en/descargar.php?id=8824&resolucion=2560x1440
+    sudo wget https://c4.wallpaperflare.com/wallpaper/301/681/306/anime-anime-girls-supermarket-white-hair-blonde-hd-wallpaper-preview.jpg
+    sudo wget http://getwallpapers.com/wallpaper/full/f/4/e/348160.jpg
+    sudo wget
+    sudo wget
+    sudo wget
+    sudo wget
     clear
 #fi
 

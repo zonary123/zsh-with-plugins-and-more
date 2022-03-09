@@ -2,21 +2,21 @@
 #               Colores                  #
 #========================================#
 export negro="\e[0;30m"
-export grisoscuro="\e[0;31m"
+export grisoscuro="\e[1;30m"
 export azul="\e[0;34m"
-export azulreslatado="\e[1;31m"
-export verde="\e[0;32m"
-export verderesaltado="\e[0;32m"
+export celeste="\e[1;34m"
+export verdeoscuro="\e[0;32m"
+export verdeclaro="\e[1;32m"
 export cian="\e[0;36m"
-export cianresaltado="\e[1;36m"
+export verdeagua="\e[1;36m"
 export rojo="\e[0;31m"
-export rojoresaltado="\e[1;31m"
-export purpura="\e[0;35m"
-export purpuraresaltado="\e[1;35m"
-export cafe="\e[0;33m"
+export rojoclaro="\e[1;31m"
+export violeta="\e[0;35m"
+export lila="\e[1;35m"
+export marron="\e[0;33m"
 export amarillo="\e[1;33m"
-export gris="\e[0;37m"
-export blanco="\e[0;31m"
+export grisclaro="\e[0;37m"
+export blanco="\e[1;37m"
 
 #========================================#
 #            Fzf-theme                   #

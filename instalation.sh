@@ -148,14 +148,19 @@ sudo cp -fr ~/.fzf /etc/skel
 sudo cp -fr ~/.config /etc/skel
 clear
 sudo chmod 766 -R $directorio/config
-echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Configuracion del zsh a partir de unas configuraciones determinadas"
-read -rp "Quieres una configuracion determinada si/no: " respuesta
-if [[ "$respuesta" == "si" ]]
-then
-    $directorio/Themes.sh
-else
-    p10k configure
-fi
+
+
+#.zshrc .p10k.zsh
+#echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Configuracion del zsh a partir de unas configuraciones determinadas"
+#read -rp "Quieres una configuracion determinada si/no: " respuesta
+#if [[ "$respuesta" == "si" ]]
+#then
+#    $directorio/Themes.sh
+#else
+#    p10k configure
+#fi
+cp $directorio/.zshrc ~
+cp $directorio/.p10k.zsh ~
 clear
 
 sudo apt update && sudo apt upgrade
@@ -197,7 +202,8 @@ then
     clear
 fi
 clear
-echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar imagenes de fondo de pantalla: "
+echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Se descargaran por debajo de 100MB de espacio de imagenes de fondos de pantalla"
+echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea descargar imagenes de fondo de pantalla: "
 read wallpapers
 if [[ "$wallpapers" == "si" ]]
 then

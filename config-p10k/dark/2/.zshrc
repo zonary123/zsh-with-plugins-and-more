@@ -16,7 +16,7 @@ export purpuraresaltado="\e[1;35m"
 export cafe="\e[0;33m"
 export amarillo="\e[1;33m"
 export gris="\e[0;37m"
-export blanco="\e[0;31m"
+export blanco="\e[1;37m"
 
 #========================================#
 #            Fzf-theme                   #
