@@ -6,6 +6,7 @@ Tambien se instalara unas tipografias para la terminal. Tendras que cambiar la t
 ## Install
 ```ini
   git clone https://github.com/zonary123/zsh-with-plugins-and-more
+  cd https://github.com/zonary123/zsh-with-plugins-and-more
   ./instalation.sh
 ```
 ## Instalacion al terminar
@@ -19,14 +20,17 @@ lsd
 ![](src/img/lsd.png)
 ## Inslatacion de bspwm sxhkd automatico
 - [config de s4vitar](https://github.com/yorkox0/autoBspwm)
+
+## Polybar
+- [polybar-spotify](https://github.com/PrayagS/polybar-spotify)
 - [polybar-themes](https://github.com/adi1090x/polybar-themes)
-- [vivid](https://github.com/sharkdp/vivid/tree/master/themes)
-## Links de cada cosa.
+
+## Links de cada cosa
 - [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 - [fzf](https://github.com/junegunn/fzf)
 - [lsd](https://github.com/Peltoche/lsd)
-- [LS_COlors](https://github.com/sharkdp/vivid)
 - [bat](https://github.com/sharkdp/bat)
+- [vivid](https://github.com/sharkdp/vivid)
 ## Tipografia
 La tipografia se instala sola pero tienes que cambiarla manualmente en la terminal.Esto es para poder ver los iconos y las demas cosas y que no veas una terminal con simbolos raros.
 

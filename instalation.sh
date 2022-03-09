@@ -45,6 +45,7 @@ clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Git clone del repositorio de yorkox0/autoBspwm"
 git clone https://github.com/yorkox0/autoBspwm
+git clone https://github.com/PrayagS/polybar-spotify
 sudo apt update -y && sudo apt upgrade -y 
 clear
 
@@ -203,6 +204,21 @@ then
     sudo chmod 777 $directorio/config/script/imagenes.sh
     $directorio/config/script/Imagenes.sh
     sudo chmod -R 755 ~/.wallpapers
+    clear
+fi
+clear
+echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar spotify: "
+read spotify
+if [[ "$spotify" == "si" ]]
+then
+    sudo snap install spotify
+    sudo pip3 install meson
+    sudo apt install playerctl
+    #instalacion zscroll
+    git clone https://github.com/noctuid/zscroll
+    cd zscroll
+    sudo python3 setup.py install
+    cd $directorio
     clear
 fi
 clear
