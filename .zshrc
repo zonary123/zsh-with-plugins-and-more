@@ -1,3 +1,5 @@
+export ip="$(/sbin/ifconfig eth0 | grep "inet " | awk '{print $2}')"
+screenfetch -C "Ip=${rojoclaro}$ip"
 #========================================#
 #               Colores                  #
 #========================================#
