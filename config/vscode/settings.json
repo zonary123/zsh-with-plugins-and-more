@@ -1,5 +1,6 @@
 {
     "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.cursorStyle": "line",
     "files.autoSaveDelay": 1,
     "editor.minimap.enabled": true,
     "editor.minimap.renderCharacters": true,
