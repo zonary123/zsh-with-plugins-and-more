@@ -73,7 +73,7 @@ sudo cp -fr $directorio/config/picom ~/.config
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
-sudo apt install zsh ranger xclip snapd tree pip htop -y
+sudo apt install zsh ranger xclip snapd tree pip htop gedit -y
 clear
 
 #Comandos wget
@@ -108,9 +108,9 @@ clear
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Moviendo archivos .p10k.zsh y .zshrc al directorio personal del usuario directorio de root y a al directorio /etc/skel"
 sudo mkdir /usr/share/zsh-p10k 
 sudo cp -fr $directorio/powerlevel10k /usr/share/zsh-p10k
-sudo cp -fr $directorio/{.p10k.zsh,.zshrc} /etc/skel
-sudo cp -fr $directorio/{.p10k.zsh,.zshrc} ~
-sudo cp -fr $directorio/{.p10k.zsh,.zshrc} /root
+sudo cp -fr $directorio/{.p10k.zsh,.zshrc,.bashrc} /etc/skel
+sudo cp -fr $directorio/{.p10k.zsh,.zshrc,.bashrc} ~
+sudo cp -fr $directorio/{.p10k.zsh,.zshrc,.bashrc} /root
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de los plugins"
