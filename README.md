@@ -31,6 +31,7 @@ lsd
 - [lsd](https://github.com/Peltoche/lsd)
 - [bat](https://github.com/sharkdp/bat)
 - [vivid](https://github.com/sharkdp/vivid)
+- [fd](https://github.com/sharkdp/fd)
 ## Tipografia
 La tipografia se instala sola pero tienes que cambiarla manualmente en la terminal.Esto es para poder ver los iconos y las demas cosas y que no veas una terminal con simbolos raros.
 

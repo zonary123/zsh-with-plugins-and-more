@@ -111,8 +111,7 @@
     "liveshare.connectionMode": "relay",
     "bracket-pair-colorizer-2.depreciation-notice": false,
     "gitlens.advanced.messages": {
-        "suppressGitMissingWarning": true,
-    },
-    
+        "suppressGitMissingWarning": true
+    }
 //    "terminal.integrated.defaultProfile.linux": "zsh",
 }
