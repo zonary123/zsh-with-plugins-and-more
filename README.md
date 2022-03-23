@@ -6,7 +6,7 @@ Tambien se instalara unas tipografias para la terminal. Tendras que cambiar la t
 ## Install
 ```ini
   git clone https://github.com/zonary123/zsh-with-plugins-and-more
-  cd https://github.com/zonary123/zsh-with-plugins-and-more
+  cd zsh-with-plugins-and-more
   ./instalation.sh
 ```
 ## Instalacion al terminar
