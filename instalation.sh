@@ -100,7 +100,8 @@ clear
 #Comandos Git clone
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Clonacion de repositorios github powerlevel10k | plugins de zsh => zsh-autosuggestions y zsh-syntax-highlighting "
 cd $directorio
-git clone https://github.com/romkatv/powerlevel10k.git $directorio
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $directorio
 git clone https://github.com/zsh-users/zsh-autosuggestions $directorio/plugins-zsh/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting $directorio/plugins-zsh/zsh-syntax-highlighting
 
@@ -172,7 +173,7 @@ clear
 ##Instalacion de visual studio codes
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Visual studio code: "
 read code
-if [[ "$code" == "si" ]]
+if [[ "$code" == "si" ]] | [[ "$code" == "S" ]] | [[ "$code" == "Y" ]] | [[ "$code" == "Si" ]] | [[ "$code" == "SI" ]]
 then
     sudo chmod -R 777 ./config/script
     sudo mkdir ~/scripts
