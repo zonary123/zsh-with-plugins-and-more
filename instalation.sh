@@ -28,7 +28,7 @@ chown $USER:$USER -R $directorio
 read -p "Quieres una actualizacion a full: " full
 if [[ "$full" == "si" ]]    # ← see 'man bash' for valid conditional statements.
 then
-    sudo apt full-upgrade
+    sudo apt full-upgrade -y
 else
     clear
 fi
