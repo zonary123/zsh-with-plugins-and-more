@@ -52,7 +52,7 @@ clear
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Ejecucion del main.py de yorkox0/autoBspwm"
 cd $directorio/autoBspwm
 python3 $directorio/autoBspwm/main.py
-cd ~/git/clone/zsh-with-plugins-and-more
+cd $directorio
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Copiando archivos de configuracion para polybar bspwm sxhkd picom"
@@ -78,11 +78,13 @@ clear
 
 #Comandos wget
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de bat, lsd, vivid, fd y descarga de la fuente de hack nerd fonts"
+cd $directorio
 sudo wget https://github.com/sharkdp/bat/releases/download/v0.20.0/bat_0.20.0_amd64.deb
 sudo wget https://github.com/Peltoche/lsd/releases/download/0.21.0/lsd_0.21.0_amd64.deb
 sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip 
 sudo wget https://github.com/sharkdp/vivid/releases/download/v0.8.0/vivid_0.8.0_amd64.deb
 sudo wget https://github.com/sharkdp/fd/releases/download/v8.3.2/fd_8.3.2_amd64.deb
+sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 sudo dpkg -i $directorio/vivid_0.8.0_amd64.deb
 sudo dpkg -i $directorio/lsd_0.21.0_amd64.deb
 sudo dpkg -i $directorio/bat_0.20.0_amd64.deb
@@ -106,10 +108,18 @@ git clone https://github.com/zsh-users/zsh-autosuggestions $directorio/plugins-z
 git clone https://github.com/zsh-users/zsh-syntax-highlighting $directorio/plugins-zsh/zsh-syntax-highlighting
 
 #Instalacion de la tipografia Hack nerd Fonts
-sudo mv $directorio/Hack.zip /usr/share/fonts
+sudo mkdir /usr/share/fonts/Hack
+sudo mkdir /usr/share/fonts/Firacode
+sudo mv $directorio/Hack.zip /usr/share/fonts/Hack
+sudo mv $directorio/FiraCode.zip /usr/share/fonts/Firacode
+cd /usr/share/fonts/Hack
+unzip Hack.zip
+cd /usr/share/fonts/Firacode
+unzip FiraCode.zip
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Moviendo archivos .p10k.zsh y .zshrc al directorio personal del usuario directorio de root y a al directorio /etc/skel"
+cd $directorio
 sudo mkdir /usr/share/zsh-p10k 
 sudo cp -fr $directorio/powerlevel10k /usr/share/zsh-p10k
 sudo cp -fr $directorio/{.p10k.zsh,.zshrc,.bashrc} /etc/skel
@@ -257,4 +267,7 @@ sudo chown -R root:root /usr/local/share/zsh/site-functions
 #========================================#
 #              FINISH                    #
 #========================================#
+cd /usr/share/fonts
+sudo unzip Hack.zip
+sudo unzip FiraCode.zip
 reboot
