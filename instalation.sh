@@ -211,8 +211,7 @@ echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar gitkraken: "
 read gitkraken
 if [[ "$gitkraken" == "si" ]]
 then
-    wget https://www.gitkraken.com/download/linux-deb
-    sudo dpkg -i ./gitkraken-amd64.deb
+    sudo snap install gitkraken --classic
     clear
 fi
 clear
