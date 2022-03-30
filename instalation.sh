@@ -26,7 +26,7 @@ export directorio=$PWD
 chown $USER:$USER -R $directorio
 
 read -p "Quieres una actualizacion a full: " full
-if [[ "$full" == "si" ]]    # ← see 'man bash' for valid conditional statements.
+if [[ "$full" == "si" ]] | [[ "$full" == "S" ]] | [[ "$full" == "Y" ]] | [[ "$full" == "Si" ]] | [[ "$full" == "SI" ]]    # ← see 'man bash' for valid conditional statements.
 then
     sudo apt full-upgrade -y
 else
@@ -209,7 +209,7 @@ clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar gitkraken: "
 read gitkraken
-if [[ "$gitkraken" == "si" ]]
+if [[ "$gitkraken" == "si" ]] | [[ "$gitkraken" == "S" ]] | [[ "$gitkraken" == "Y" ]] | [[ "$gitkraken" == "Si" ]] | [[ "$gitkraken" == "SI" ]]
 then
     sudo snap install gitkraken --classic
     clear
@@ -218,7 +218,7 @@ clear
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Se descargaran por debajo de 100MB de espacio de imagenes de fondos de pantalla"
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea descargar imagenes de fondo de pantalla: "
 read wallpapers
-if [[ "$wallpapers" == "si" ]]
+if [[ "$wallpapers" == "si" ]] | [[ "$wallpapers" == "S" ]] | [[ "$wallpapers" == "Y" ]] | [[ "$wallpapers" == "Si" ]] | [[ "$wallpapers" == "SI" ]]
 then
     sudo chmod 777 $directorio/config/script/imagenes.sh
     $directorio/config/script/Imagenes.sh
@@ -228,7 +228,7 @@ fi
 clear
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar spotify: "
 read spotify
-if [[ "$spotify" == "si" ]]
+if [[ "$spotify" == "si" ]] | [[ "$spotify" == "S" ]] | [[ "$spotify" == "Y" ]] | [[ "$spotify" == "Si" ]] | [[ "$spotify" == "SI" ]]
 then
     sudo snap install spotify
     sudo pip3 install meson
@@ -243,7 +243,7 @@ fi
 clear
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Servicios de servidor: "
 read Servicios
-if [[ "$Servicios" == "si" ]]
+if [[ "$Servicios" == "si" ]] | [[ "$Servicios" == "S" ]] | [[ "$Servicios" == "Y" ]] | [[ "$Servicios" == "Si" ]] | [[ "$Servicios" == "SI" ]]
 then
     sudo chmod 777 $directorio/installs/services.sh
     $directorio/installs/services.sh
