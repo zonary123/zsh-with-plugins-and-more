@@ -38,8 +38,8 @@ sudo chmod 777 -R $directorio/config
 sudo chmod -R 755 $directorio
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes "
 sudo pacman -S update && sudo pacman -S upgrade 
-sudo pacman -S install libev-dev screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
-sudo pacman -S install libuv1-dev libev polybar slim libpam0g-dev libxrandr-dev libfreetype6-dev libimlib2-dev libxft-dev cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xsudo rm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsonsudo cpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-dev
+sudo pacman -S libev-dev screenfetch build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
+sudo pacman -S libuv1-dev libev polybar slim libpam0g-dev libxrandr-dev libfreetype6-dev libimlib2-dev libxft-dev cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xsudo rm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsonsudo cpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev libuv1-dev
 sudo pacman -S update -y && sudo pacman -S upgrade 
 clear
 
@@ -73,7 +73,7 @@ sudo cp -fr $directorio/config/picom ~/.config
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
-sudo pacman -S install zsh ranger xclip snapd tree pip htop gedit -y
+sudo pacman -S zsh ranger xclip snapd tree pip htop gedit
 clear
 
 #Comandos wget
@@ -232,7 +232,7 @@ if [[ "$spotify" == "si" ]]
 then
     sudo snap install spotify
     sudo pip3 install meson
-    sudo pacman -S install playerctl
+    sudo pacman -S playerctl
     #instalacion zscroll
     git clone https://github.com/noctuid/zscroll
     cd zscroll
