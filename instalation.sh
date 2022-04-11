@@ -73,7 +73,7 @@ sudo cp -fr $directorio/config/picom ~/.config
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
-sudo apt install zsh ranger xclip snapd tree pip htop gedit -y
+sudo apt install zsh ranger xclip snapd tree pip htop gedit nvim -y
 clear
 
 #Comandos wget
@@ -248,6 +248,16 @@ then
     sudo chmod 777 $directorio/installs/services.sh
     $directorio/installs/services.sh
     clear
+fi
+
+clear
+echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Neovim: "
+read nvim
+if [[ "$nvim" == "si" ]] | [[ "$nvim" == "S" ]] | [[ "$nvim" == "Y" ]] | [[ "$nvim" == "Si" ]] | [[ "$nvim" == "SI" ]]
+then
+    mv ~/.config/nvim ~/.config/NVIM.BAK
+    git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+    nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 fi
 
 #cd ~/git/clone/zsh-with-plugins-and-more
