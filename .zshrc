@@ -1,6 +1,5 @@
 #export ip="$(/sbin/ifconfig eth0 | grep "inet " | awk '{print $2}')"
 #screenfetch -C "Ip=${rojoclaro}$ip"
-screenfetch
 #========================================#
 #               Colores                  #
 #========================================#
@@ -104,7 +103,7 @@ autoload -U promptinit   # prompt
 autoload -U up-line-or-beginning-search; zle -N up-line-or-beginning-search
 autoload -U down-line-or-beginning-search; zle -N down-line-or-beginning-search
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#A5C1BF"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#A5C1BF,bold"
 
 # ---| Correction  and Autocompletion |--- #
 zstyle ':completion:*:correct:*' original true
