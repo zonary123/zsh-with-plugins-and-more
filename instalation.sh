@@ -26,7 +26,7 @@ export directorio=$PWD
 chown $USER:$USER -R $directorio
 
 read -p "Quieres una actualizacion a full: " full
-if [[ "$full" == "si" ]] | [[ "$full" == "S" ]] | [[ "$full" == "Y" ]] | [[ "$full" == "Si" ]] | [[ "$full" == "SI" ]]    # ← see 'man bash' for valid conditional statements.
+if [[ "$full" == "si" ]] || [[ "$full" == "S" ]] || [[ "$full" == "Y" ]] || [[ "$full" == "Si" ]] || [[ "$full" == "SI" ]]    # ← see 'man bash' for valid conditional statements.
 then
     sudo apt full-upgrade -y
 else
@@ -100,7 +100,7 @@ sudo cp $directorio/config/lsd/ls_colors.sh /usr/share/lsd
 clear
 
 #Comandos Git clone
-echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Clonacion de repositorios github powerlevel10k | plugins de zsh => zsh-autosuggestions y zsh-syntax-highlighting "
+echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Clonacion de repositorios github powerlevel10k || plugins de zsh => zsh-autosuggestions y zsh-syntax-highlighting "
 cd $directorio
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $directorio
@@ -179,11 +179,10 @@ clear
 
 sudo apt update && sudo apt upgrade
 clear
-
 ##Instalacion de visual studio codes
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Visual studio code: "
 read code
-if [[ "$code" == "si" ]] | [[ "$code" == "S" ]] | [[ "$code" == "Y" ]] | [[ "$code" == "Si" ]] | [[ "$code" == "SI" ]]
+if [[ "$code" == "si" ]] || [[ "$code" == "S" ]] || [[ "$code" == "Y" ]] || [[ "$code" == "Si" ]] || [[ "$code" == "SI" ]]
 then
     sudo chmod -R 777 ./config/script
     sudo mkdir ~/scripts
@@ -191,7 +190,7 @@ then
     sudo chmod 777 /etc/crontab
     sudo chmod +x /home/$USER/scripts/snap.sh
     sudo /home/$USER/scripts/snap.sh
-    if [[ "@reboot root $HOME/scripts/snap.sh" == $(sudo cat /etc/crontab | grep "@reboot root $HOME/scripts/snap.sh") ]]
+    if [[ "@reboot root $HOME/scripts/snap.sh" == $(sudo cat /etc/crontab || grep "@reboot root $HOME/scripts/snap.sh") ]]
     then
         echo "Ya esta escrito en crontab"
     else
@@ -209,7 +208,7 @@ clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar gitkraken: "
 read gitkraken
-if [[ "$gitkraken" == "si" ]] | [[ "$gitkraken" == "S" ]] | [[ "$gitkraken" == "Y" ]] | [[ "$gitkraken" == "Si" ]] | [[ "$gitkraken" == "SI" ]]
+if [[ "$gitkraken" == "si" ]] || [[ "$gitkraken" == "S" ]] || [[ "$gitkraken" == "Y" ]] || [[ "$gitkraken" == "Si" ]] || [[ "$gitkraken" == "SI" ]]
 then
     sudo snap install gitkraken --classic
     clear
@@ -218,7 +217,7 @@ clear
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Se descargaran por debajo de 100MB de espacio de imagenes de fondos de pantalla"
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea descargar imagenes de fondo de pantalla: "
 read wallpapers
-if [[ "$wallpapers" == "si" ]] | [[ "$wallpapers" == "S" ]] | [[ "$wallpapers" == "Y" ]] | [[ "$wallpapers" == "Si" ]] | [[ "$wallpapers" == "SI" ]]
+if [[ "$wallpapers" == "si" ]] || [[ "$wallpapers" == "S" ]] || [[ "$wallpapers" == "Y" ]] || [[ "$wallpapers" == "Si" ]] || [[ "$wallpapers" == "SI" ]]
 then
     sudo chmod 777 $directorio/config/script/imagenes.sh
     $directorio/config/script/Imagenes.sh
@@ -228,7 +227,7 @@ fi
 clear
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar spotify: "
 read spotify
-if [[ "$spotify" == "si" ]] | [[ "$spotify" == "S" ]] | [[ "$spotify" == "Y" ]] | [[ "$spotify" == "Si" ]] | [[ "$spotify" == "SI" ]]
+if [[ "$spotify" == "si" ]] || [[ "$spotify" == "S" ]] || [[ "$spotify" == "Y" ]] || [[ "$spotify" == "Si" ]] || [[ "$spotify" == "SI" ]]
 then
     sudo snap install spotify
     sudo pip3 install meson
@@ -243,7 +242,7 @@ fi
 clear
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Servicios de servidor: "
 read Servicios
-if [[ "$Servicios" == "si" ]] | [[ "$Servicios" == "S" ]] | [[ "$Servicios" == "Y" ]] | [[ "$Servicios" == "Si" ]] | [[ "$Servicios" == "SI" ]]
+if [[ "$Servicios" == "si" ]] || [[ "$Servicios" == "S" ]] || [[ "$Servicios" == "Y" ]] || [[ "$Servicios" == "Si" ]] || [[ "$Servicios" == "SI" ]]
 then
     sudo chmod 777 $directorio/installs/services.sh
     $directorio/installs/services.sh
@@ -253,7 +252,7 @@ fi
 clear
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Neovim: "
 read nvim
-if [[ "$nvim" == "si" ]] | [[ "$nvim" == "S" ]] | [[ "$nvim" == "Y" ]] | [[ "$nvim" == "Si" ]] | [[ "$nvim" == "SI" ]]
+if [[ "$nvim" == "si" ]] || [[ "$nvim" == "S" ]] || [[ "$nvim" == "Y" ]] || [[ "$nvim" == "Si" ]] || [[ "$nvim" == "SI" ]]
 then
     mv ~/.config/nvim ~/.config/NVIM.BAK
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
@@ -280,3 +279,4 @@ cd /usr/share/fonts
 sudo unzip Hack.zip
 sudo unzip FiraCode.zip
 reboot
+
