@@ -203,9 +203,10 @@
   #################################[ os_icon: os identifier ]##################################
   # OS identifier color.
   typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=197
+  # rojo typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=197
   # Custom icon.
   # OSICON
-  typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=''
+  # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=''
 
   ################################[ prompt_char: prompt symbol ]################################
   # Transparent background.

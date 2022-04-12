@@ -214,6 +214,7 @@ then
     clear
 fi
 clear
+
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Se descargaran por debajo de 100MB de espacio de imagenes de fondos de pantalla"
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea descargar imagenes de fondo de pantalla: "
 read wallpapers
@@ -258,7 +259,7 @@ then
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
     nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 fi
-
+sudo ln -sfr $HOME /root/.zshrc
 #cd ~/git/clone/zsh-with-plugins-and-more
 #echo -e "${amarillo}[${rojo}*${amarillo}]${verde} La instalacion fue hecha satisfactoriamente"
 #if [[ "$respuesta" == "no" ]]
@@ -278,5 +279,14 @@ sudo chown -R root:root /usr/local/share/zsh/site-functions
 cd /usr/share/fonts
 sudo unzip Hack.zip
 sudo unzip FiraCode.zip
-reboot
+
+echo -e "${azul} desea reiniciar el ordenador"
+read reboot
+if (( "$reboot" == "si" ))    # ← see 'man bash' for valid conditional statements.
+then
+    reboot
+else
+    clear
+    echo -e "${verde}La instalacion se hizo correctamente."
+fi
 
