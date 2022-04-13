@@ -73,7 +73,7 @@ sudo cp -fr $directorio/config/picom ~/.config
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
-sudo apt install zsh ranger xclip snapd tree pip htop gedit neovim gnome-terminal qterminal
+sudo apt install zsh ranger xclip snapd tree pip htop gedit gnome-terminal qterminal
 clear
 
 #Comandos wget
@@ -274,9 +274,18 @@ sudo unzip Hack.zip
 sudo unzip FiraCode.zip
 
 clear
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt-get update
+sudo apt-get install neovim
 mv ~/.config/nvim ~/.config/NVIM.BAK
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+
+sudo su
+mv ~/.config/nvim ~/.config/NVIM.BAK
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+su $usuario
 
 echo -e "${azul} desea reiniciar el ordenador"
 read reboot
