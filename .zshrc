@@ -269,3 +269,11 @@ function makest(){
 # Finalize Powerlevel10k instant prompt. Should stay at the bottom of ~/.zshrc.
 #(( ! ${+functions[p10k-instant-prompt-finalize]} )) || p10k-instant-prompt-finalize
 
+function zle-keymap-select {
+  if [[ $KEYMAP == vicmd ]] || [[ $1 = 'block' ]]; then
+    echo -ne '\e[1 q'
+  elif [[ $KEYMAP == main ]] || [[ $KEYMAP == viins ]] || [[ $KEYMAP = '' ]] || [[ $1 = 'beam' ]]; then
+    echo -ne '\e[5 q'
+  fi
+}
+zle -N zle-keymap-select

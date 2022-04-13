@@ -73,7 +73,7 @@ sudo cp -fr $directorio/config/picom ~/.config
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
-sudo apt install zsh ranger xclip snapd tree pip htop gedit nvim gnome-terminal qterminal
+sudo apt install zsh ranger xclip snapd tree pip htop gedit neovim gnome-terminal qterminal
 clear
 
 #Comandos wget
@@ -252,14 +252,6 @@ then
 fi
 
 clear
-echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Neovim: "
-read nvim
-if [[ "$nvim" == "si" ]] || [[ "$nvim" == "S" ]] || [[ "$nvim" == "Y" ]] || [[ "$nvim" == "Si" ]] || [[ "$nvim" == "SI" ]]
-then
-    mv ~/.config/nvim ~/.config/NVIM.BAK
-    git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
-    nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
-fi
 sudo ln -sfr $HOME /root/.zshrc
 #cd ~/git/clone/zsh-with-plugins-and-more
 #echo -e "${amarillo}[${rojo}*${amarillo}]${verde} La instalacion fue hecha satisfactoriamente"
@@ -280,6 +272,11 @@ sudo chown -R root:root /usr/local/share/zsh/site-functions
 cd /usr/share/fonts
 sudo unzip Hack.zip
 sudo unzip FiraCode.zip
+
+clear
+mv ~/.config/nvim ~/.config/NVIM.BAK
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 
 echo -e "${azul} desea reiniciar el ordenador"
 read reboot
