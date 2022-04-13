@@ -16,6 +16,8 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+bspc rule -a burp-StartBurp: state=floating
+
 feh --bg-fill ~/.wallpapers/anime/1.jpg
 xsetroot -cursor_name left_ptr &
 wmname LG3D &
@@ -26,7 +28,7 @@ bspc config borgrder_width 0
 picom --experimental-backends &
 
 ~/.config/polybar/shapes/preview.sh --shapes
-~/.config/polybar/shapes/scripts/colors-dark.sh --blue-gray
+~/.config/polybar/shapes/scripts/colors-dark.sh --red
 
 #Script cambio de color segun la hora del dia comentar la linea 29 para poder usar el script
 #~/git/clone/zsh-with-plugins-and-more/config/polybar/polybar-themes/simple/shapes/scripts/colores.sh

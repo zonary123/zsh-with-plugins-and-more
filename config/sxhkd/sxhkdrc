@@ -8,7 +8,6 @@ super + ctrl + g
 # terminal emulator
 super + Return
 	exo-open --launch TerminalEmulator
-#gnome-terminal
 
 # program launcher
 super + d
@@ -63,7 +62,7 @@ super + ctrl + {m,x,y,z}
 #	bspc node -{f,s} {west,south,north,east}
 
 super + {_,shift + }{Left,Down,Up,Right}
-       bspc node -{f,s} {west,south,north,east}
+    bspc node -{f,s} {west,south,north,east}
 
 
 # focus the node for the given path jump
@@ -139,15 +138,21 @@ alt + super + {Left,Down,Up,Right}
 # ---------------------------------------------
 
 # Google-Chrome
-
 super + shift + g
 	google-chrome
 
 # Open Burpsuite Professional
-
 super + shift + b
 	gksudo burp
 
 #firefox
 super + shift + f
 	firefox
+
+#opera
+super + shift + options
+	opera
+
+#terminal
+super + alt + Rerturn
+	gnome-terminal
