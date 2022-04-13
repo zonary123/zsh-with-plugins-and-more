@@ -73,7 +73,7 @@ sudo cp -fr $directorio/config/picom ~/.config
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
-sudo apt install zsh ranger xclip snapd tree pip htop gedit nvim -y
+sudo apt install zsh ranger xclip snapd tree pip htop gedit nvim
 clear
 
 #Comandos wget
@@ -113,9 +113,9 @@ sudo mkdir /usr/share/fonts/Firacode
 sudo mv $directorio/Hack.zip /usr/share/fonts/Hack
 sudo mv $directorio/FiraCode.zip /usr/share/fonts/Firacode
 cd /usr/share/fonts/Hack
-unzip Hack.zip
+sudo unzip Hack.zip
 cd /usr/share/fonts/Firacode
-unzip FiraCode.zip
+sudo unzip FiraCode.zip
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Moviendo archivos .p10k.zsh y .zshrc al directorio personal del usuario directorio de root y a al directorio /etc/skel"
@@ -230,6 +230,7 @@ echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar spotify: "
 read spotify
 if [[ "$spotify" == "si" ]] || [[ "$spotify" == "S" ]] || [[ "$spotify" == "Y" ]] || [[ "$spotify" == "Si" ]] || [[ "$spotify" == "SI" ]]
 then
+    sudo systemctl restart snapd
     sudo snap install spotify
     sudo pip3 install meson
     sudo apt install playerctl
