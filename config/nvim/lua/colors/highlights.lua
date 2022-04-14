@@ -78,7 +78,7 @@ end
 
 -- Dashboard
 fg("AlphaHeader", red)
-fg("AlphaButtons", blue)
+fg("AlphaButtons", nord_blue)
 
 -- Git signs
 fg_bg("DiffAdd", blue, "NONE")
