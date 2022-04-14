@@ -18,6 +18,10 @@ ranger
 ![](src/img/ranger.png)
 lsd
 ![](src/img/lsd.png)
+neovim with Nvchad
+![](src/img/nvim-dashboard.png)
+![](src/img/nvim.png)
+
 ## Inslatacion de bspwm sxhkd automatico
 - [config de s4vitar](https://github.com/yorkox0/autoBspwm)
 
@@ -32,6 +36,7 @@ lsd
 - [bat](https://github.com/sharkdp/bat)
 - [vivid](https://github.com/sharkdp/vivid)
 - [fd](https://github.com/sharkdp/fd)
+- [NvChad](https://github.com/NvChad/NvChad)
 ## Tipografia
 La tipografia se instala sola pero tienes que cambiarla manualmente en la terminal.Esto es para poder ver los iconos y las demas cosas y que no veas una terminal con simbolos raros.
 
