@@ -93,6 +93,7 @@ sudo rm ./lsd_0.21.0_amd64.deb
 sudo rm ./bat_0.20.0_amd64.deb
 sudo rm ./vivid_0.8.0_amd64.deb
 sudo rm ./fd_8.3.2_amd64.deb
+
 #Instalacion de colores de lsd
 sudo chmod -R +x /usr/share/lsd
 sudo mkdir -p /usr/share/lsd
@@ -179,6 +180,7 @@ clear
 
 sudo apt update && sudo apt upgrade
 clear
+
 ##Instalacion de visual studio codes
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar Visual studio code: "
 read code
@@ -279,13 +281,12 @@ sudo apt-get update
 sudo apt-get install neovim
 mv ~/.config/nvim ~/.config/NVIM.BAK
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+sudo cp -rf $directorio/config/nvim ~/.config/
 nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 
-sudo su
-mv ~/.config/nvim ~/.config/NVIM.BAK
+sudo cp -rf ~/.config/nvim /root/.config
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
-nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
-su $usuario
+sudo nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 
 echo -e "${azul} desea reiniciar el ordenador"
 read reboot
