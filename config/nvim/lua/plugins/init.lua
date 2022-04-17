@@ -15,6 +15,7 @@ local plugins = {
    { "karb94/neoscroll.nvim" },
    { "junegunn/fzf.vim" },
    { "liuchengxu/vim-clap" },
+   { "github/copilot.vim" },
    {
       "wbthomason/packer.nvim",
       event = "VimEnter",

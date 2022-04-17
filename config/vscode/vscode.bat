@@ -13,6 +13,10 @@ code --install-extension christian-kohler.path-intellisense
 code --install-extension ionutvmi.path-autocomplete
 code --install-extension mhutchie.git-graph
 
+#====================================================#
+#                   GitHub Copilot                   #
+#====================================================#
+code --install-extension github.copilot
 
 #====================================================#
 #                       Colors                       #

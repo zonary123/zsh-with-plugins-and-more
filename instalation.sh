@@ -282,10 +282,14 @@ sudo apt-get install neovim
 mv ~/.config/nvim ~/.config/NVIM.BAK
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 sudo cp -rf $directorio/config/nvim ~/.config/
+git clone https://github.com/github/copilot.vim.git \
+  ~/.config/nvim/pack/github/start/copilot.vim
 nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 
 sudo cp -rf ~/.config/nvim /root/.config
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+git clone https://github.com/github/copilot.vim.git \
+  ~/.config/nvim/pack/github/start/copilot.vim
 sudo nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 
 echo -e "${azul} desea reiniciar el ordenador"

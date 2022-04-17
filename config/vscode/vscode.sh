@@ -18,6 +18,11 @@ code --install-extension mhutchie.git-graph
 #code --install-extension Shan.code-settings-sync
 
 #====================================================#
+#                   GitHub Copilot                   #
+#====================================================#
+code --install-extension github.copilot
+
+#====================================================#
 #                       Colors                       #
 #====================================================#
 code --install-extension oderwat.indent-rainbow
