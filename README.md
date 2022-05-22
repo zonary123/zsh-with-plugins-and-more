@@ -54,7 +54,9 @@ La tipografia se instala sola pero tienes que cambiarla manualmente en la termin
 - [zsh-vscode](https://github.com/valentinocossar/vscode)
 - [nmap-plugin-zsh](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/nmap)
 
-
+## Programas instalacion
+- [Visual studio code](https://code.visualstudio.com/)
+- [Zeal](https://zealdocs.org/)
 
 
 

@@ -73,7 +73,7 @@ sudo cp -fr $directorio/config/picom ~/.config
 clear
 
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Instalacion de paquetes zsh ranger xclip snapd tree"
-sudo apt install zsh ranger xclip snapd tree pip htop gedit gnome-terminal qterminal
+sudo apt install zsh ranger xclip snapd tree pip htop gedit gnome-terminal qterminal zeal
 clear
 
 #Comandos wget
