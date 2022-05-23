@@ -27,4 +27,5 @@ code --install-extension whizkydee.material-palenight-theme
 code --install-extension unthrottled.doki-theme
 code --install-extension monokai.theme-monokai-pro-vscode
 code --install-extension pawelgrzybek.gatito-theme
+code --install-extension 2gua.rainbow-brackets
 code --install-extension daylerees.rainglow

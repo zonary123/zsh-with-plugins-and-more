@@ -15,6 +15,7 @@ code --install-extension hookyqr.beautify
 code --install-extension christian-kohler.path-intellisense
 code --install-extension ionutvmi.path-autocomplete
 code --install-extension mhutchie.git-graph
+code --install-extension 2gua.rainbow-brackets
 #code --install-extension Shan.code-settings-sync
 
 #====================================================#
