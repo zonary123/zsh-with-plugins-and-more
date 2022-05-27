@@ -29,3 +29,6 @@ code --install-extension monokai.theme-monokai-pro-vscode
 code --install-extension pawelgrzybek.gatito-theme
 code --install-extension 2gua.rainbow-brackets
 code --install-extension daylerees.rainglow
+code --install-extension yandeu.five-server
+code --install-extension redhat.vscode-yaml
+code --install-extension redhat.vscode-xml

@@ -9,13 +9,16 @@ code --install-extension icrawl.discord-vscode
 code --install-extension kevinkyang.auto-comment-blocks 
 code --install-extension aaron-bond.better-comments 
 code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension ms-vsliveshare.vsliveshare-audio
 code --install-extension alefragnani.bookmarks
 code --install-extension hookyqr.beautify
 code --install-extension christian-kohler.path-intellisense
 code --install-extension ionutvmi.path-autocomplete
 code --install-extension mhutchie.git-graph
 code --install-extension 2gua.rainbow-brackets
+code --install-extension yandeu.five-server
+code --install-extension redhat.vscode-yaml
+code --install-extension redhat.vscode-xml
+
 #code --install-extension Shan.code-settings-sync
 
 #====================================================#

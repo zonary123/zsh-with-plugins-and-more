@@ -286,11 +286,21 @@ git clone https://github.com/github/copilot.vim.git \
   ~/.config/nvim/pack/github/start/copilot.vim
 nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 
+#nodejs
+# Using Ubuntu
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# Using Debian, as root
+curl -fsSL https://deb.nodesource.com/setup_17.x | bash -
+apt-get install -y nodejs
+
 sudo cp -rf ~/.config/nvim /root/.config
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
-git clone https://github.com/github/copilot.vim.git \
-  ~/.config/nvim/pack/github/start/copilot.vim
+#git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+#git clone https://github.com/github/copilot.vim.git \  ~/.config/nvim/pack/github/start/copilot.vim
 sudo nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+
+nvim +Copilot Setup
 
 echo -e "${azul} desea reiniciar el ordenador"
 read reboot

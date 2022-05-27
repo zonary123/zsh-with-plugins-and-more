@@ -1,6 +1,5 @@
 {
     "workbench.iconTheme": "material-icon-theme",
-    "terminal.integrated.cursorStyle": "line",
     "files.autoSaveDelay": 1,
     "editor.minimap.enabled": true,
     "editor.minimap.renderCharacters": true,
@@ -16,6 +15,7 @@
         "rgb(255, 165, 0)"
     ],
     "bracket-pair-colorizer-2.activeScopeCSS": [
+    
         "borderStyle : solid",
         "borderWidth : 1px",
         "borderColor : {color}",
@@ -111,7 +111,22 @@
     "liveshare.connectionMode": "relay",
     "bracket-pair-colorizer-2.depreciation-notice": false,
     "gitlens.advanced.messages": {
-        "suppressGitMissingWarning": true
-    }
-//    "terminal.integrated.defaultProfile.linux": "zsh",
+        "suppressGitMissingWarning": true,
+    },
+    "Lua.telemetry.enable": true,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": true
+    },
+    "fiveServer.navigate": true,
+    "BracketHighlighter.blurOutOfScopeText": true,
+    "BracketHighlighter.blurOpacity": "0.25",
+    "BracketHighlighter.fontWeight": "bold",
+    "BracketHighlighter.highlightScopeFromText": true,
+    "BracketHighlighter.textDecoration": "underline",
+    "BracketHighlighter.useAngularBrackets": false,
 }
+// "terminal.integrated.defaultProfile.linux": "zsh",
+// "terminal.integrated.defaultProfile.osx": "zsh",
