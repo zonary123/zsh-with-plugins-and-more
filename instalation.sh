@@ -164,16 +164,6 @@ sudo cp -fr ~/.config /etc/skel
 clear
 sudo chmod 766 -R $directorio/config
 
-
-#.zshrc .p10k.zsh
-#echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Configuracion del zsh a partir de unas configuraciones determinadas"
-#read -rp "Quieres una configuracion determinada si/no: " respuesta
-#if [[ "$respuesta" == "si" ]]
-#then
-#    $directorio/Themes.sh
-#else
-#    p10k configure
-#fi
 cp $directorio/.zshrc ~
 cp $directorio/.p10k.zsh ~
 clear
@@ -227,6 +217,7 @@ then
     sudo chmod -R 755 ~/.wallpapers
     clear
 fi
+
 clear
 echo -e "${amarillo}[${rojo}*${amarillo}]${cian} Desea instalar spotify: "
 read spotify
@@ -255,13 +246,7 @@ fi
 
 clear
 sudo ln -sfr $HOME /root/.zshrc
-#cd ~/git/clone/zsh-with-plugins-and-more
-#echo -e "${amarillo}[${rojo}*${amarillo}]${verde} La instalacion fue hecha satisfactoriamente"
-#if [[ "$respuesta" == "no" ]]
-#then
-#    zsh
-#    p10k configure
-#fi
+
 
 sudo chown -R root:root /usr/local/share/zsh/site-functions
 #========================================#

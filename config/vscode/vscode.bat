@@ -32,3 +32,4 @@ code --install-extension daylerees.rainglow
 code --install-extension yandeu.five-server
 code --install-extension redhat.vscode-yaml
 code --install-extension redhat.vscode-xml
+code --install-extension shan.code-settings-sync
